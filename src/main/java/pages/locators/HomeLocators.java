@@ -28,7 +28,7 @@ public class HomeLocators {
 	
 	//tagged user in post
 	//NOTE this will have to be changed
-	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[1]/div[1]/div[2]/div[1]/a")
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[1]")
 	public WebElement firstPostTaggedUser;
 	
 	// first post like button
