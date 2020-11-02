@@ -56,5 +56,4 @@ public class LoginRegisterLocators {
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div/section/form/div[1]/div[4]/div/i")
 	public WebElement email2Error;
 	
-	
 }
