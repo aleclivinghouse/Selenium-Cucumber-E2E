@@ -50,5 +50,11 @@ public class LoginRegisterLocators {
 	@FindBy(how=How.XPATH ,using="//*[@id=\"root\"]/div/section/div/section/form/div[4]/div/a/input")
 	public WebElement registerSubmit;
 	
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div/section/form/div[1]/div[3]/div/i")
+	public WebElement emailError;
+	
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div/section/form/div[1]/div[4]/div/i")
+	public WebElement email2Error;
+	
 	
 }
