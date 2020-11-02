@@ -3,7 +3,7 @@ Feature: Logging in
   I want to login with my details
     
   Scenario: User is not registered
-    Given I am on the landing page
+    Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
   	When I fill in email with a random string
     And I fill in password with a random string
     And I press Sign in

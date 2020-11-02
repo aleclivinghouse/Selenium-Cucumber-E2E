@@ -1,0 +1,277 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-02T23:10:30.592Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4479623158,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User is not registered",
+        "description": "",
+        "id": "logging-in;user-is-not-registered",
+        "after": [
+          {
+            "result": {
+              "duration": 179555623,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1957231709,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11440629,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in email with a random string",
+            "match": {
+              "location": "LoginSteps.user_fills_in_email_with_random_string()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3011376,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in password with a random string",
+            "match": {
+              "location": "LoginSteps.user_fills_in_passsword_with_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I press Sign in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 839666,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I should not be signed in",
+            "match": {
+              "location": "LoginSteps.user_should_not_be_signed_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-02T23:10:37.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2353878077,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User enters wrong password",
+        "description": "",
+        "id": "logging-in;user-enters-wrong-password",
+        "after": [
+          {
+            "result": {
+              "duration": 89412640,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I am on the landing page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 682768,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I fill in \"password\" with \"wrongpassword\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I press \"Sign in\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1389032,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I should not be signed in",
+            "match": {
+              "location": "LoginSteps.user_should_not_be_signed_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-02T23:10:39.729Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1440596625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User is registered and enters correct password",
+        "description": "",
+        "id": "logging-in;user-is-registered-and-enters-correct-password",
+        "after": [
+          {
+            "result": {
+              "duration": 91866210,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I am on the landing page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "I fill in \"email\" with \"testuser1@livinghouse.com\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I fill in \"password\" with \"password\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I press \"Sign in\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be signed in",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Logging in",
+    "description": "  As a user\n  I want to login with my details",
+    "id": "logging-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Login.feature",
+    "tags": []
+  }
+]

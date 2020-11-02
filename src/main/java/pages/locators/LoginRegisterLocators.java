@@ -6,6 +6,9 @@ import org.openqa.selenium.support.How;
 
 public class LoginRegisterLocators {
 	
+	@FindBy(how=How.XPATH,using="//*[@id=\"root\"]/div/header/div/p")
+	public WebElement landingLogo;
+	
 	//Login locators
 	@FindBy(how=How.XPATH,using="//*[@id=\"email\"]")
 	public WebElement logInEmail;

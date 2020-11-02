@@ -1,10 +1,12 @@
 package steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import pages.actions.LoginActions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.And;
 
 public class LoginSteps {
+	LoginActions loginActions = new LoginActions();
 	
 	@When("^I fill in email with a random string$")
 	public void user_fills_in_email_with_random_string() throws Throwable {
@@ -36,7 +38,7 @@ public class LoginSteps {
 	    
 	}
 	
-	@And("^I fill in password with \"([^\"]*\"")
+	@And("^I fill in password with \"([^\"]*)\"")
 	public void user_uses_correct_password(String password)  {
 	    
 	}

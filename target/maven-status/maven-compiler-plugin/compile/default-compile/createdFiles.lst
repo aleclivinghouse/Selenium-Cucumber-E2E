@@ -1,0 +1,4 @@
+pages/locators/OtherProfileLocators.class
+utils/SeleniumDriver.class
+pages/locators/LoginRegisterLocators.class
+pages/locators/ProfileLocators.class
