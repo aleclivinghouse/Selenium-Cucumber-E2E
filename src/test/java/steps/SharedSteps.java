@@ -51,6 +51,7 @@ public class SharedSteps {
     Then the last comment on the first post in my profile and on my wall disappears
     Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall
     Then the like count on the first post on my profile and on my wall gets incremented by one
+    And I search "testuser 1" and select the first result
  */
 	
 

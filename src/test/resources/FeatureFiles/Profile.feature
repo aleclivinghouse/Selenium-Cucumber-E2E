@@ -184,7 +184,7 @@ Feature: Profile
 	    And I log in as "test user 1"
 	    And I click on my name in the nav
 	    And I am redirected to my profile page
-	    Then the comment from the random user shows up as the last comment on the first post on my profile
+	    Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall
 	    
 	Scenario: Another user likes the first post on my profile
     	Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
@@ -195,7 +195,6 @@ Feature: Profile
 	    And I fill in register password with a random string
 	    And I fill in birthmonth with a random month
 	    And I fill in birthdate with a random number between 1 and 28
-	    And I fill in year with a random year between 1950 and 2000
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    And I redirected to my home page
