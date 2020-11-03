@@ -22,19 +22,20 @@ public class LoginActions {
 		PageFactory.initElements(SeleniumDriver.getDriver(),navLocators);
 	}
 	
-	public void LoginInWithRandomPassword() {
-		String random = UUID.randomUUID().toString();
-		logInRegisterLocators.logInEmail.clear();
-		logInRegisterLocators.logInEmail.sendKeys(random);
-	}
-	
 	public void LoginInWithRandomEmail() {
 		String random = UUID.randomUUID().toString();
 		String emailEnd = "@gmail.com";
 		String randomEmail = random.concat(emailEnd);
-		logInRegisterLocators.logInPassword.clear();
-		logInRegisterLocators.logInPassword.sendKeys(randomEmail);
+		logInRegisterLocators.logInEmail.clear();
+		logInRegisterLocators.logInEmail.sendKeys(randomEmail);
 	}
+	
+	public void LoginInWithRandomPassword() {
+		String random = UUID.randomUUID().toString();
+		logInRegisterLocators.logInPassword.clear();
+		logInRegisterLocators.logInPassword.sendKeys(random);
+	}
+	
 	
 	public void PressSignIn() {
 		logInRegisterLocators.logInSubmit.click();
