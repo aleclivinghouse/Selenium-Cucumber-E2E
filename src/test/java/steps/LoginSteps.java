@@ -9,12 +9,6 @@ import cucumber.api.java.en.And;
 public class LoginSteps {
 	LoginActions loginActions = new LoginActions();
 	
-	@Given("^I am on the landing page \"([^\"]*)\" of the website$")
-	public void user_navigates_to_landing_page(String url) throws Throwable {
-		System.out.println("@Given -- I am on the landing page");
-		SeleniumDriver.openPage(url);
-	}
-	
 	@When("^I fill in email with a random string$")
 	public void user_fills_in_email_with_random_string() throws Throwable {
 		System.out.println("@Given -- emasil is a random string");

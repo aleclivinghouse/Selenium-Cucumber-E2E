@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-03T01:11:41.891Z",
+        "start_timestamp": "2020-11-03T01:15:53.007Z",
         "before": [
           {
             "result": {
-              "duration": 1920439275,
+              "duration": 1693229400,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 102328233,
+              "duration": 139870199,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1380656442,
+              "duration": 1181705240,
               "status": "passed"
             },
             "line": 6,
@@ -47,13 +47,13 @@
                   "offset": 26
                 }
               ],
-              "location": "LoginSteps.user_navigates_to_landing_page(String)"
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 202722048,
+              "duration": 192937891,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 142605368,
+              "duration": 137769683,
               "status": "passed"
             },
             "line": 8,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 43759307,
+              "duration": 44080525,
               "status": "passed"
             },
             "line": 9,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 1027112726,
+              "duration": 1029722715,
               "status": "passed"
             },
             "line": 10,
@@ -102,11 +102,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T01:11:46.728Z",
+        "start_timestamp": "2020-11-03T01:15:57.451Z",
         "before": [
           {
             "result": {
-              "duration": 1272421068,
+              "duration": 1262838335,
               "status": "passed"
             },
             "match": {
@@ -121,7 +121,7 @@
         "after": [
           {
             "result": {
-              "duration": 94025936,
+              "duration": 94582892,
               "status": "passed"
             },
             "match": {
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1417093776,
+              "duration": 1272532954,
               "status": "passed"
             },
             "line": 14,
@@ -146,13 +146,13 @@
                   "offset": 26
                 }
               ],
-              "location": "LoginSteps.user_navigates_to_landing_page(String)"
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 137203854,
+              "duration": 142720633,
               "status": "passed"
             },
             "line": 15,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 103317438,
+              "duration": 92072805,
               "status": "passed"
             },
             "line": 16,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 47052305,
+              "duration": 43952235,
               "status": "passed"
             },
             "line": 17,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 1028123109,
+              "duration": 1024497076,
               "status": "passed"
             },
             "line": 18,
@@ -207,11 +207,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T01:11:50.845Z",
+        "start_timestamp": "2020-11-03T01:16:01.393Z",
         "before": [
           {
             "result": {
-              "duration": 1275329387,
+              "duration": 1247663866,
               "status": "passed"
             },
             "match": {
@@ -226,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 112059598,
+              "duration": 93212276,
               "status": "passed"
             },
             "match": {
@@ -239,7 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1463748647,
+              "duration": 1258694622,
               "status": "passed"
             },
             "line": 21,
@@ -251,13 +251,13 @@
                   "offset": 26
                 }
               ],
-              "location": "LoginSteps.user_navigates_to_landing_page(String)"
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 141663159,
+              "duration": 149878056,
               "status": "passed"
             },
             "line": 22,
@@ -275,7 +275,7 @@
           },
           {
             "result": {
-              "duration": 87901904,
+              "duration": 92371599,
               "status": "passed"
             },
             "line": 23,
@@ -293,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 48857842,
+              "duration": 51254337,
               "status": "passed"
             },
             "line": 24,
@@ -305,7 +305,7 @@
           },
           {
             "result": {
-              "duration": 1028397384,
+              "duration": 1029846154,
               "status": "passed"
             },
             "line": 25,

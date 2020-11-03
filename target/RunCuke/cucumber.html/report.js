@@ -17,7 +17,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_landing_page(String)"
+  "location": "SharedSteps.user_navigates_to_landing_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -78,7 +78,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_landing_page(String)"
+  "location": "SharedSteps.user_navigates_to_landing_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -139,7 +139,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginSteps.user_navigates_to_landing_page(String)"
+  "location": "SharedSteps.user_navigates_to_landing_page(String)"
 });
 formatter.result({
   "status": "passed"
