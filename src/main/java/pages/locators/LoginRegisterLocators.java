@@ -16,7 +16,7 @@ public class LoginRegisterLocators {
 	@FindBy(how=How.XPATH,using="//*[@id=\"password\"]")
 	public WebElement logInPassword;
 	
-	@FindBy(how=How.LINK_TEXT,using="Log in")
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/header/div/form/div[3]/div/button")
 	public WebElement logInSubmit;
 	
 	//Register locators

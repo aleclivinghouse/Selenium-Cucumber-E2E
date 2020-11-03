@@ -37,7 +37,7 @@ public class LoginActions {
 	}
 	
 	public void PressSignIn() {
-		logInRegisterLocators.logInPassword.click();
+		logInRegisterLocators.logInSubmit.click();
 	}
 	
 	public void UserIsSignedIn() throws InterruptedException {
