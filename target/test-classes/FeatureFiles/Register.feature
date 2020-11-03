@@ -19,8 +19,8 @@ Feature: Registration
 		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
 		When I fill in firstname with a random string
 	    And I fill in lastname with a random string
-	    And I fill in email with the username "testuser1@livinghouse.com
-	    And I fill in reenter email with the username "testuser1@livinghouse.com
+	    And I fill in email with the username testuser1@livinghouse.com
+	    And I fill in reenter email with the username testuser1@livinghouse.com
 	    And I fill in password with a random string
 	    And I fill in birthmonth with a random month
 	    And I fill in birthdate with a random number between 1 and 28
