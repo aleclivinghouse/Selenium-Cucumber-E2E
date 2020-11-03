@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-03T18:30:11.785Z",
+        "start_timestamp": "2020-11-03T20:30:27.123Z",
         "before": [
           {
             "result": {
-              "duration": 3269234361,
+              "duration": 1886184113,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 139378012,
+              "duration": 110940488,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1901996690,
+              "duration": 1335826724,
               "status": "passed"
             },
             "line": 6,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 308444835,
+              "duration": 195550312,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 183195567,
+              "duration": 154423282,
               "status": "passed"
             },
             "line": 8,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 69202483,
+              "duration": 47505580,
               "status": "passed"
             },
             "line": 9,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 1030404921,
+              "duration": 1033281149,
               "status": "passed"
             },
             "line": 10,
@@ -102,11 +102,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T18:30:18.718Z",
+        "start_timestamp": "2020-11-03T20:30:31.910Z",
         "before": [
           {
             "result": {
-              "duration": 1556510678,
+              "duration": 1279266260,
               "status": "passed"
             },
             "match": {
@@ -121,7 +121,7 @@
         "after": [
           {
             "result": {
-              "duration": 134659160,
+              "duration": 97328485,
               "status": "passed"
             },
             "match": {
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1273145855,
+              "duration": 1189460869,
               "status": "passed"
             },
             "line": 14,
@@ -152,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 197253576,
+              "duration": 152937908,
               "status": "passed"
             },
             "line": 15,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 177008833,
+              "duration": 101676500,
               "status": "passed"
             },
             "line": 16,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 64807261,
+              "duration": 46779018,
               "status": "passed"
             },
             "line": 17,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 1033496611,
+              "duration": 1030783705,
               "status": "passed"
             },
             "line": 18,
@@ -207,11 +207,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T18:30:23.163Z",
+        "start_timestamp": "2020-11-03T20:30:35.814Z",
         "before": [
           {
             "result": {
-              "duration": 1618377046,
+              "duration": 1238937406,
               "status": "passed"
             },
             "match": {
@@ -226,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 185399156,
+              "duration": 92775475,
               "status": "passed"
             },
             "match": {
@@ -239,7 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1239006802,
+              "duration": 1246429503,
               "status": "passed"
             },
             "line": 21,
@@ -257,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 171310472,
+              "duration": 149478192,
               "status": "passed"
             },
             "line": 22,
@@ -275,7 +275,7 @@
           },
           {
             "result": {
-              "duration": 113784654,
+              "duration": 90859358,
               "status": "passed"
             },
             "line": 23,
@@ -293,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 70907158,
+              "duration": 59162532,
               "status": "passed"
             },
             "line": 24,
@@ -305,7 +305,7 @@
           },
           {
             "result": {
-              "duration": 1040371230,
+              "duration": 1029601577,
               "status": "passed"
             },
             "line": 25,
@@ -323,6 +323,578 @@
     "id": "logging-in",
     "keyword": "Feature",
     "uri": "file:src/test/resources/FeatureFiles/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-03T20:30:39.733Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1221153758,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User is not logged in username is unique",
+        "description": "",
+        "id": "registration;user-is-not-logged-in-username-is-unique",
+        "after": [
+          {
+            "result": {
+              "duration": 97875970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1386170758,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189997365,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill in firstname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157355580,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in lastname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120323757,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in register email with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131650756,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in reenter email with the same random string",
+            "match": {
+              "location": "RegisterSteps.i_reenter_email_with_the_same_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99346831,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in register password with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87751550,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I fill in birthmonth with a random month",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76334504,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill in birthdate with a random number between 1 and 28",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71858066,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I fill in year with a random year between 1950 and 2000",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41776240,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill in one of the gender buttons",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47034681,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I press Sign up",
+            "match": {
+              "location": "RegisterSteps.i_press_sign_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1028000451,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should be redirected to my home page",
+            "match": {
+              "location": "RegisterSteps.i_should_be_redirected_to_my_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T20:30:44.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1229783380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User is not logged in and username is not unique",
+        "description": "",
+        "id": "registration;user-is-not-logged-in-and-username-is-not-unique",
+        "after": [
+          {
+            "result": {
+              "duration": 107582188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1231699252,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179337417,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I fill in firstname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127669156,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I fill in lastname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109953933,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill in register email with the username \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 44
+                }
+              ],
+              "location": "RegisterSteps.i_fill_in_email_with_the_user_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122159492,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I fill in reenter email with the username \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 43
+                }
+              ],
+              "location": "RegisterSteps.i_fill_in_reenter_email_with_the_user_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142679346,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I fill in password with a random string",
+            "match": {
+              "location": "LoginSteps.user_fills_in_passsword_with_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94734705,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I fill in birthmonth with a random month",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84668340,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I fill in birthdate with a random number between 1 and 28",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82410845,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I fill in year with a random year between 1950 and 2000",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41449319,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I fill in one of the gender buttons",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53042948,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I press Sign up",
+            "match": {
+              "location": "RegisterSteps.i_press_sign_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1038831694,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should get an error message",
+            "match": {
+              "location": "RegisterSteps.i_should_get_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T20:30:49.154Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1327422575,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "User is not logged in and username is not reentered correctly",
+        "description": "",
+        "id": "registration;user-is-not-logged-in-and-username-is-not-reentered-correctly",
+        "after": [
+          {
+            "result": {
+              "duration": 95850667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1255820177,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 159906047,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I fill in firstname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129542988,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I fill in lastname with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131597699,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I fill in register email with a random string",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105393340,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I fill in reenter email with a different random string",
+            "match": {
+              "location": "RegisterSteps.i_reenter_email_with_a_different_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110570488,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I fill in password with a random string",
+            "match": {
+              "location": "LoginSteps.user_fills_in_passsword_with_random_string()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82933483,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I fill in birthmonth with a random month",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70566545,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I fill in birthdate with a random number between 1 and 28",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82695181,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I fill in year with a random year between 1950 and 2000",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43207554,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I fill in one of the gender buttons",
+            "match": {
+              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51482847,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I press Sign up",
+            "match": {
+              "location": "RegisterSteps.i_press_sign_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1038122948,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I should get an error message",
+            "match": {
+              "location": "RegisterSteps.i_should_get_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "\tI want to register as a new user",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Register.feature",
     "tags": []
   }
 ]

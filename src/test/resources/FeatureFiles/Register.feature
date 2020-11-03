@@ -5,12 +5,12 @@ Feature: Registration
 		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
 		When I fill in firstname with a random string
 	    And I fill in lastname with a random string
-	    And I fill in email with a random string
+	    And I fill in register email with a random string
 	    And I fill in reenter email with the same random string
-	    And I fill in password with a random string
+	    And I fill in register password with a random string
 	    And I fill in birthmonth with a random month
 	    And I fill in birthdate with a random number between 1 and 28
-	    And I fill in year with a random year between
+	    And I fill in year with a random year between 1950 and 2000
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    Then I should be redirected to my home page
@@ -19,12 +19,12 @@ Feature: Registration
 		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
 		When I fill in firstname with a random string
 	    And I fill in lastname with a random string
-	    And I fill in email with the username testuser1@livinghouse.com
-	    And I fill in reenter email with the username testuser1@livinghouse.com
+	    And I fill in register email with the username "testuser1@livinghouse.com"
+	    And I fill in reenter email with the username "testuser1@livinghouse.com"
 	    And I fill in password with a random string
 	    And I fill in birthmonth with a random month
 	    And I fill in birthdate with a random number between 1 and 28
-	    And I fill in year with a random year between
+	    And I fill in year with a random year between 1950 and 2000
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    Then I should get an error message
@@ -33,12 +33,12 @@ Feature: Registration
 		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
 		When I fill in firstname with a random string
 	    And I fill in lastname with a random string
-	    And I fill in email with a random string
+	    And I fill in register email with a random string
 	    And I fill in reenter email with a different random string
 	    And I fill in password with a random string
 	    And I fill in birthmonth with a random month
 	    And I fill in birthdate with a random number between 1 and 28
-	    And I fill in year with a random year between
+	    And I fill in year with a random year between 1950 and 2000
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    Then I should get an error message

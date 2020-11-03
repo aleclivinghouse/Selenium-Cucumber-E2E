@@ -25,10 +25,22 @@ public class RegisterSteps {
 		registerActions.LastNameWithRandomString();
 	}
 	
-	@And("^I fill in email with a random string$")
+	@And("^I fill in register email with a random string$")
 	public void i_fill_in_email_with_a_random_string() throws Throwable {
 		System.out.println("@And -- email is a random string");
 		registerActions.RegisterWithRandomEmail();
+	}
+	
+	@And("^I fill in register email with the username \"([^\"]*)\"$")
+	public void i_fill_in_email_with_the_user_name(String username) throws Throwable {
+		System.out.println("@And -- email is a testuser1@livinghouse.com");
+		registerActions.RegisterWithEmailAlreadyTaken(username);
+	}
+	
+	@And("^I fill in reenter email with the username \"([^\"]*)\"$")
+	public void i_fill_in_reenter_email_with_the_user_name(String username) throws Throwable {
+		System.out.println("@And -- reenter email is a testuser1@livinghouse.com");
+		registerActions.ReenterEmailAlreadyTaken(username);
 	}
 	
 	@And("^I fill in reenter email with the same random string$")
@@ -37,7 +49,13 @@ public class RegisterSteps {
 		registerActions.EnterCorrectEmailInReenterEmail();
 	}
 	
-	@And("^I fill in password with a random string$")
+	@And("^I fill in reenter email with a different random string$")
+	public void i_reenter_email_with_a_different_random_string() throws Throwable {
+		System.out.println("@And -- reemail is entered incorrectly");
+		registerActions.EnterIncorrectEmailInReenterEmail();
+	}
+	
+	@And("^I fill in register password with a random string$")
 	public void i_fill_in_password_with_a_random_string() throws Throwable {
 		System.out.println("@And -- password is a random string");
 		registerActions.RegisterWithRandomPassword();

@@ -53,11 +53,16 @@ public class RegisterActions {
 	
 	}
 	
-	public void RegisterWithEmailAlreadyTaken() {
-		firstEmail = "testuser1@livinghouse.com";
+	public void RegisterWithEmailAlreadyTaken(String username) {
+//		firstEmail = "testuser1@livinghouse.com";
 		logInRegisterLocators.registerEmail1.clear();
-		logInRegisterLocators.registerEmail1.sendKeys(firstEmail);
+		logInRegisterLocators.registerEmail1.sendKeys(username);
 	
+	}
+	
+	public void ReenterEmailAlreadyTaken(String username) {
+		logInRegisterLocators.registerEmail2.clear();
+		logInRegisterLocators.registerEmail2.sendKeys(username);
 	}
 	
 	public void EnterCorrectEmailInReenterEmail() {
@@ -126,7 +131,7 @@ public class RegisterActions {
 		  if(error1Text == "warning" && error2Text == "warning") {
 			  flag = "true";
 		  }
-		 Assert.assertEquals(flag, "true");
+		 Assert.assertEquals(flag, "false");
 	}
 	
 	public void redirectedToHomePage() throws InterruptedException {
