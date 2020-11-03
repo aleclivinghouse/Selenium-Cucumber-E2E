@@ -108,25 +108,6 @@ public class SharedSteps {
 		registerActions.PressSignUp();
 	}
 	
-	/* 
-	Shared Login Register 
-	 
-    
-	When I fill in firstname with a random string
-	And I fill in lastname with a random string
-	And I fill in register email with a random string
-	And I fill in reenter email with the same random string
-	And I fill in register password with a random string
-	And I fill in birthmonth with a random month
-	And I fill in birthdate with a random number between 1 and 28
-    And I fill in year with a random year between 1950 and 2000
-	And I fill in one of the gender buttons
-	And I press Sign up
-    
-    
- */
-	
-
 	
 	/* 
 	Shared Wall/Profile/Friends
@@ -140,6 +121,8 @@ public class SharedSteps {
     Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall
     Then the like count on the first post on my profile and on my wall gets incremented by one
     And I search "testuser 1" and select the first result
+    And I log out
+    And I log in as "test user 1"
  */
 	
 

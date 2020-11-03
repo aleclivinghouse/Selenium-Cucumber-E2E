@@ -34,7 +34,7 @@ Scenario: I enter a post on my wall with just text:
 	    And I fill in password with "password"
 	    And I press Sign in
 	    And I am redirected to my home page
-	    I click on the like button for the first post on my wall
+	    And I click on the like button for the first post on my wall
 	    Then the like count goes up by one on my profile and on my wall
 	    
 	Scenario: I comment on the first post on my wall
@@ -43,7 +43,7 @@ Scenario: I enter a post on my wall with just text:
 	    And I fill in password with "password"
 	    And I press Sign in
 	    And I am redirected to my home page
-	    I enter a comment on the first post in my wall
+	    And I enter a comment on the first post in my wall
 	    Then the comment appears as the last comment on the first post on my profile and on my wall
 	    
 	Scenario: I delete the last comment on the first post on my wall
@@ -73,7 +73,7 @@ Scenario: I enter a post on my wall with just text:
 	    And I comment on the first post in his feed
 	    And I log out
 	    And I log in as "test user 1"
-	    And I am redirected to my profile page
+	    And I am redirected to my home page
 	    Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall
 	    
 	Scenario: Another user likes the first post on my wall
