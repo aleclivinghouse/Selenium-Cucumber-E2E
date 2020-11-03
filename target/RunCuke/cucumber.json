@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-03T20:35:01.334Z",
+        "start_timestamp": "2020-11-03T23:10:59.454Z",
         "before": [
           {
             "result": {
-              "duration": 1960195777,
+              "duration": 3130305702,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 98439227,
+              "duration": 202675622,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1272632927,
+              "duration": 1638591181,
               "status": "passed"
             },
             "line": 6,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 178093526,
+              "duration": 196452241,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 91684028,
+              "duration": 134986583,
               "status": "passed"
             },
             "line": 8,
@@ -77,19 +77,19 @@
           },
           {
             "result": {
-              "duration": 52459836,
+              "duration": 79262576,
               "status": "passed"
             },
             "line": 9,
             "name": "I press Sign in",
             "match": {
-              "location": "LoginSteps.i_press_Sign_in()"
+              "location": "SharedSteps.i_press_Sign_in()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1030946139,
+              "duration": 1041851377,
               "status": "passed"
             },
             "line": 10,
@@ -102,11 +102,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T20:35:06.038Z",
+        "start_timestamp": "2020-11-03T23:11:05.904Z",
         "before": [
           {
             "result": {
-              "duration": 1299090526,
+              "duration": 1481962292,
               "status": "passed"
             },
             "match": {
@@ -121,7 +121,7 @@
         "after": [
           {
             "result": {
-              "duration": 84439428,
+              "duration": 173942043,
               "status": "passed"
             },
             "match": {
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1249541973,
+              "duration": 1192800056,
               "status": "passed"
             },
             "line": 14,
@@ -152,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 146991943,
+              "duration": 269696059,
               "status": "passed"
             },
             "line": 15,
@@ -164,13 +164,13 @@
                   "offset": 22
                 }
               ],
-              "location": "LoginSteps.user_uses_correct_email(String)"
+              "location": "SharedSteps.user_uses_correct_email(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 93398831,
+              "duration": 122002729,
               "status": "passed"
             },
             "line": 16,
@@ -182,19 +182,19 @@
           },
           {
             "result": {
-              "duration": 50709267,
+              "duration": 65474765,
               "status": "passed"
             },
             "line": 17,
             "name": "I press Sign in",
             "match": {
-              "location": "LoginSteps.i_press_Sign_in()"
+              "location": "SharedSteps.i_press_Sign_in()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1026863769,
+              "duration": 1033570220,
               "status": "passed"
             },
             "line": 18,
@@ -207,11 +207,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T20:35:09.994Z",
+        "start_timestamp": "2020-11-03T23:11:10.250Z",
         "before": [
           {
             "result": {
-              "duration": 1253092180,
+              "duration": 1588124792,
               "status": "passed"
             },
             "match": {
@@ -226,7 +226,7 @@
         "after": [
           {
             "result": {
-              "duration": 115787734,
+              "duration": 171135560,
               "status": "passed"
             },
             "match": {
@@ -239,7 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1170490440,
+              "duration": 1198189004,
               "status": "passed"
             },
             "line": 21,
@@ -257,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 167471898,
+              "duration": 320134211,
               "status": "passed"
             },
             "line": 22,
@@ -269,13 +269,13 @@
                   "offset": 22
                 }
               ],
-              "location": "LoginSteps.user_uses_correct_email(String)"
+              "location": "SharedSteps.user_uses_correct_email(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 85627899,
+              "duration": 123751121,
               "status": "passed"
             },
             "line": 23,
@@ -287,31 +287,31 @@
                   "offset": 25
                 }
               ],
-              "location": "LoginSteps.user_uses_correct_password(String)"
+              "location": "SharedSteps.user_uses_correct_password(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 66120486,
+              "duration": 62893573,
               "status": "passed"
             },
             "line": 24,
             "name": "I press Sign in",
             "match": {
-              "location": "LoginSteps.i_press_Sign_in()"
+              "location": "SharedSteps.i_press_Sign_in()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1032913631,
+              "duration": 1038872472,
               "status": "passed"
             },
             "line": 25,
             "name": "I should be signed in",
             "match": {
-              "location": "LoginSteps.I_should_be_signed_in()"
+              "location": "SharedSteps.I_should_be_signed_in()"
             },
             "keyword": "Then "
           }
@@ -329,11 +329,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-03T20:35:13.895Z",
+        "start_timestamp": "2020-11-03T23:11:14.761Z",
         "before": [
           {
             "result": {
-              "duration": 1252586322,
+              "duration": 1624138853,
               "status": "passed"
             },
             "match": {
@@ -348,7 +348,7 @@
         "after": [
           {
             "result": {
-              "duration": 104465536,
+              "duration": 190133018,
               "status": "passed"
             },
             "match": {
@@ -361,7 +361,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1830610244,
+              "duration": 1476029344,
               "status": "passed"
             },
             "line": 5,
@@ -379,127 +379,127 @@
           },
           {
             "result": {
-              "duration": 188080375,
+              "duration": 292377134,
               "status": "passed"
             },
             "line": 6,
             "name": "I fill in firstname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 110520057,
+              "duration": 175788102,
               "status": "passed"
             },
             "line": 7,
             "name": "I fill in lastname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 131082078,
+              "duration": 168433600,
               "status": "passed"
             },
             "line": 8,
             "name": "I fill in register email with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_email_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113969457,
+              "duration": 138389314,
               "status": "passed"
             },
             "line": 9,
             "name": "I fill in reenter email with the same random string",
             "match": {
-              "location": "RegisterSteps.i_reenter_email_with_the_same_random_string()"
+              "location": "SharedSteps.i_reenter_email_with_the_same_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 100624809,
+              "duration": 147738286,
               "status": "passed"
             },
             "line": 10,
             "name": "I fill in register password with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 92351091,
+              "duration": 108634876,
               "status": "passed"
             },
             "line": 11,
             "name": "I fill in birthmonth with a random month",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+              "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 82772742,
+              "duration": 100754037,
               "status": "passed"
             },
             "line": 12,
             "name": "I fill in birthdate with a random number between 1 and 28",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 71792693,
+              "duration": 101576799,
               "status": "passed"
             },
             "line": 13,
             "name": "I fill in year with a random year between 1950 and 2000",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40845181,
+              "duration": 67900906,
               "status": "passed"
             },
             "line": 14,
             "name": "I fill in one of the gender buttons",
             "match": {
-              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+              "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47894000,
+              "duration": 86299759,
               "status": "passed"
             },
             "line": 15,
             "name": "I press Sign up",
             "match": {
-              "location": "RegisterSteps.i_press_sign_up()"
+              "location": "SharedSteps.i_press_sign_up()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1029320985,
+              "duration": 1059398149,
               "status": "passed"
             },
             "line": 16,
@@ -512,11 +512,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T20:35:19.100Z",
+        "start_timestamp": "2020-11-03T23:11:20.506Z",
         "before": [
           {
             "result": {
-              "duration": 1337164496,
+              "duration": 1690473474,
               "status": "passed"
             },
             "match": {
@@ -531,7 +531,7 @@
         "after": [
           {
             "result": {
-              "duration": 88899309,
+              "duration": 228829528,
               "status": "passed"
             },
             "match": {
@@ -544,7 +544,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1225819393,
+              "duration": 1344817105,
               "status": "passed"
             },
             "line": 19,
@@ -562,31 +562,31 @@
           },
           {
             "result": {
-              "duration": 177138780,
+              "duration": 366533156,
               "status": "passed"
             },
             "line": 20,
             "name": "I fill in firstname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 128019603,
+              "duration": 173531056,
               "status": "passed"
             },
             "line": 21,
             "name": "I fill in lastname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 126307966,
+              "duration": 181574306,
               "status": "passed"
             },
             "line": 22,
@@ -604,7 +604,7 @@
           },
           {
             "result": {
-              "duration": 121806883,
+              "duration": 187116038,
               "status": "passed"
             },
             "line": 23,
@@ -622,79 +622,79 @@
           },
           {
             "result": {
-              "duration": 101160608,
+              "duration": 131139776,
               "status": "passed"
             },
             "line": 24,
             "name": "I fill in register password with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 81593859,
+              "duration": 124299682,
               "status": "passed"
             },
             "line": 25,
             "name": "I fill in birthmonth with a random month",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+              "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 82135661,
+              "duration": 92140330,
               "status": "passed"
             },
             "line": 26,
             "name": "I fill in birthdate with a random number between 1 and 28",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 87801881,
+              "duration": 93351770,
               "status": "passed"
             },
             "line": 27,
             "name": "I fill in year with a random year between 1950 and 2000",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 42402703,
+              "duration": 63017372,
               "status": "passed"
             },
             "line": 28,
             "name": "I fill in one of the gender buttons",
             "match": {
-              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+              "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 62440258,
+              "duration": 82217133,
               "status": "passed"
             },
             "line": 29,
             "name": "I press Sign up",
             "match": {
-              "location": "RegisterSteps.i_press_sign_up()"
+              "location": "SharedSteps.i_press_sign_up()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1044290337,
+              "duration": 1044708707,
               "status": "passed"
             },
             "line": 30,
@@ -707,11 +707,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-03T20:35:23.815Z",
+        "start_timestamp": "2020-11-03T23:11:26.319Z",
         "before": [
           {
             "result": {
-              "duration": 1309892230,
+              "duration": 1520899487,
               "status": "passed"
             },
             "match": {
@@ -726,7 +726,7 @@
         "after": [
           {
             "result": {
-              "duration": 94572886,
+              "duration": 175230661,
               "status": "passed"
             },
             "match": {
@@ -739,7 +739,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1301319068,
+              "duration": 1578856635,
               "status": "passed"
             },
             "line": 33,
@@ -757,127 +757,127 @@
           },
           {
             "result": {
-              "duration": 150972759,
+              "duration": 202745614,
               "status": "passed"
             },
             "line": 34,
             "name": "I fill in firstname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 138353263,
+              "duration": 157886239,
               "status": "passed"
             },
             "line": 35,
             "name": "I fill in lastname with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 132184706,
+              "duration": 164978323,
               "status": "passed"
             },
             "line": 36,
             "name": "I fill in register email with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_email_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 114042795,
+              "duration": 154583972,
               "status": "passed"
             },
             "line": 37,
             "name": "I fill in reenter email with a different random string",
             "match": {
-              "location": "RegisterSteps.i_reenter_email_with_a_different_random_string()"
+              "location": "RegisterSteps.i_fill_in_reenter_email_with_a_different_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 94222393,
+              "duration": 120750545,
               "status": "passed"
             },
             "line": 38,
             "name": "I fill in register password with a random string",
             "match": {
-              "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+              "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 79562445,
+              "duration": 105871346,
               "status": "passed"
             },
             "line": 39,
             "name": "I fill in birthmonth with a random month",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+              "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 74279154,
+              "duration": 111212297,
               "status": "passed"
             },
             "line": 40,
             "name": "I fill in birthdate with a random number between 1 and 28",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 76863762,
+              "duration": 95973390,
               "status": "passed"
             },
             "line": 41,
             "name": "I fill in year with a random year between 1950 and 2000",
             "match": {
-              "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+              "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40488754,
+              "duration": 51141713,
               "status": "passed"
             },
             "line": 42,
             "name": "I fill in one of the gender buttons",
             "match": {
-              "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+              "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47906012,
+              "duration": 92908056,
               "status": "passed"
             },
             "line": 43,
             "name": "I press Sign up",
             "match": {
-              "location": "RegisterSteps.i_press_sign_up()"
+              "location": "SharedSteps.i_press_sign_up()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1048680690,
+              "duration": 1049254186,
               "status": "passed"
             },
             "line": 44,

@@ -21,11 +21,6 @@ public class LoginSteps {
 		loginActions.LoginInWithRandomPassword();
 	}
 	
-	@And("^I press Sign in$")
-	public void i_press_Sign_in() throws Throwable {
-		System.out.println("@And -- I press sign in ");
-		loginActions.PressSignIn();
-	}
 	
 	@Then("^I should not be signed in$")
 	public void user_should_not_be_signed_in() throws Throwable {
@@ -33,26 +28,12 @@ public class LoginSteps {
 		loginActions.UserIsNotSignedIn();
 	}
 	
-	@Then("^I should be signed in$")
-	public void I_should_be_signed_in() throws Throwable {
-		System.out.println("@And -- I should be logged in");
-		loginActions.UserIsSignedIn();
-	}
-	
-	@When("^I fill in email with \"([^\"]*)\"")
-	public void user_uses_correct_email(String email)  {
-		loginActions.LoginInWithRightEmail(); 
-	}
-	
+
 	@And("^I fill in password with wrongpassword")
 	public void user_uses_incorrect_password()  {
 	    loginActions.WrongPassword();
 	}
 	
-	@And("^I fill in password with \"([^\"]*)\"")
-	public void user_uses_correct_password(String password)  {
-	    loginActions.LoginInWithRightPassword();
-	}
 	
 	
 }

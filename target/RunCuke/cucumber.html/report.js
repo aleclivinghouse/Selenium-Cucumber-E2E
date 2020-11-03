@@ -47,7 +47,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.i_press_Sign_in()"
+  "location": "SharedSteps.i_press_Sign_in()"
 });
 formatter.result({
   "status": "passed"
@@ -88,7 +88,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_uses_correct_email(String)"
+  "location": "SharedSteps.user_uses_correct_email(String)"
 });
 formatter.result({
   "status": "passed"
@@ -108,7 +108,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.i_press_Sign_in()"
+  "location": "SharedSteps.i_press_Sign_in()"
 });
 formatter.result({
   "status": "passed"
@@ -149,7 +149,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_uses_correct_email(String)"
+  "location": "SharedSteps.user_uses_correct_email(String)"
 });
 formatter.result({
   "status": "passed"
@@ -159,7 +159,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_uses_correct_password(String)"
+  "location": "SharedSteps.user_uses_correct_password(String)"
 });
 formatter.result({
   "status": "passed"
@@ -169,7 +169,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.i_press_Sign_in()"
+  "location": "SharedSteps.i_press_Sign_in()"
 });
 formatter.result({
   "status": "passed"
@@ -179,7 +179,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.I_should_be_signed_in()"
+  "location": "SharedSteps.I_should_be_signed_in()"
 });
 formatter.result({
   "status": "passed"
@@ -216,7 +216,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -226,7 +226,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -236,7 +236,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_email_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -246,7 +246,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_reenter_email_with_the_same_random_string()"
+  "location": "SharedSteps.i_reenter_email_with_the_same_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -256,7 +256,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -266,7 +266,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+  "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
 });
 formatter.result({
   "status": "passed"
@@ -276,7 +276,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
 });
 formatter.result({
   "status": "passed"
@@ -286,7 +286,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
 });
 formatter.result({
   "status": "passed"
@@ -296,7 +296,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+  "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
 });
 formatter.result({
   "status": "passed"
@@ -306,7 +306,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_press_sign_up()"
+  "location": "SharedSteps.i_press_sign_up()"
 });
 formatter.result({
   "status": "passed"
@@ -347,7 +347,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -357,7 +357,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -387,7 +387,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -397,7 +397,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+  "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
 });
 formatter.result({
   "status": "passed"
@@ -407,7 +407,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
 });
 formatter.result({
   "status": "passed"
@@ -417,7 +417,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
 });
 formatter.result({
   "status": "passed"
@@ -427,7 +427,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+  "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
 });
 formatter.result({
   "status": "passed"
@@ -437,7 +437,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_press_sign_up()"
+  "location": "SharedSteps.i_press_sign_up()"
 });
 formatter.result({
   "status": "passed"
@@ -478,7 +478,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_firstname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_firstname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -488,7 +488,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_lastname_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_lastname_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -498,7 +498,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_email_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_email_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -508,7 +508,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_reenter_email_with_a_different_random_string()"
+  "location": "RegisterSteps.i_fill_in_reenter_email_with_a_different_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -518,7 +518,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
+  "location": "SharedSteps.i_fill_in_password_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -528,7 +528,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthmonth_with_a_random_month()"
+  "location": "SharedSteps.i_fill_in_birthmonth_with_a_random_month()"
 });
 formatter.result({
   "status": "passed"
@@ -538,7 +538,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthdate()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthdate()"
 });
 formatter.result({
   "status": "passed"
@@ -548,7 +548,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_birthdate_with_a_random_birthyear()"
+  "location": "SharedSteps.i_fill_in_birthdate_with_a_random_birthyear()"
 });
 formatter.result({
   "status": "passed"
@@ -558,7 +558,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_fill_in_one_of_the_gender_buttons()"
+  "location": "SharedSteps.i_fill_in_one_of_the_gender_buttons()"
 });
 formatter.result({
   "status": "passed"
@@ -568,7 +568,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterSteps.i_press_sign_up()"
+  "location": "SharedSteps.i_press_sign_up()"
 });
 formatter.result({
   "status": "passed"
