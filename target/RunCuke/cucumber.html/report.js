@@ -383,11 +383,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill in password with a random string",
+  "name": "I fill in register password with a random string",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_fills_in_passsword_with_random_string()"
+  "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"
@@ -514,11 +514,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill in password with a random string",
+  "name": "I fill in register password with a random string",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.user_fills_in_passsword_with_random_string()"
+  "location": "RegisterSteps.i_fill_in_password_with_a_random_string()"
 });
 formatter.result({
   "status": "passed"

@@ -24,16 +24,18 @@ public class LoginActions {
 	
 	public void LoginInWithRandomEmail() {
 		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
 		String emailEnd = "@gmail.com";
-		String randomEmail = random.concat(emailEnd);
+		String randomEmail = randomShortened.concat(emailEnd);
 		logInRegisterLocators.logInEmail.clear();
 		logInRegisterLocators.logInEmail.sendKeys(randomEmail);
 	}
 	
 	public void LoginInWithRandomPassword() {
 		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
 		logInRegisterLocators.logInPassword.clear();
-		logInRegisterLocators.logInPassword.sendKeys(random);
+		logInRegisterLocators.logInPassword.sendKeys(randomShortened);
 	}
 	
 	
