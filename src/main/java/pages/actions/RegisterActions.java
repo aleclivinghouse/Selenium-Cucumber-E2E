@@ -136,5 +136,4 @@ public class RegisterActions {
 		Assert.assertEquals(actualText, expectedText);
 	}
 	
-	
 }
