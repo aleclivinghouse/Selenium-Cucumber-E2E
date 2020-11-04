@@ -167,6 +167,4 @@ public class SharedSteps {
 	public void log_out(String name) throws Throwable {
 		System.out.println("@And -- I log out");
 	}
-
-
 }
