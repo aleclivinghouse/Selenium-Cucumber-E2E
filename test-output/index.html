@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cucumber_framework" class="navigator-link">
-              <span class="suite-name border-passed">Cucumber_framework</span>
+              <span class="suite-name border-failed">Cucumber_framework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,46 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Cucumber_framework" class="hide-methods passed suite-Cucumber_framework"> (hide)</a> <!-- hide-methods passed suite-Cucumber_framework -->
-                      <a href="#" panel-name="suite-Cucumber_framework" class="show-methods passed suite-Cucumber_framework"> (show)</a> <!-- show-methods passed suite-Cucumber_framework -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cucumber_framework" class="hide-methods failed suite-Cucumber_framework"> (hide)</a> <!-- hide-methods failed suite-Cucumber_framework -->
+                      <a href="#" panel-name="suite-Cucumber_framework" class="show-methods failed suite-Cucumber_framework"> (show)</a> <!-- show-methods failed suite-Cucumber_framework -->
                     </span>
-                    <div class="method-list-content passed suite-Cucumber_framework">
+                    <div class="method-list-content failed suite-Cucumber_framework">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User is not logged in and username is not reentered correctly&quot;, &quot;Registration&quot;)">runScenario("User is not logged in and username is not reentered correctly", "Registration")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null)">runScenario(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User enters wrong password&quot;, &quot;Logging in&quot;)">runScenario("User enters wrong password", "Logging in")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User is not logged in username is unique&quot;, &quot;Registration&quot;)">runScenario("User is not logged in username is unique", "Registration")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User is not logged in and username is not unique&quot;, &quot;Registration&quot;)">runScenario("User is not logged in and username is not unique", "Registration")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User is not registered&quot;, &quot;Logging in&quot;)">runScenario("User is not registered", "Logging in")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;User is registered and enters correct password&quot;, &quot;Logging in&quot;)">runScenario("User is registered and enters correct password", "Logging in")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Cucumber_framework -->
+                    </div> <!-- method-list-content failed suite-Cucumber_framework -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,74 +117,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cucumber_framework" class="panel Cucumber_framework">
-          <div class="suite-Cucumber_framework-class-passed">
+          <div class="suite-Cucumber_framework-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.RunCuke</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User is not logged in and username is not reentered correctly&quot;, &quot;Registration&quot;)">
-                  </a> <!-- runScenario("User is not logged in and username is not reentered correctly", "Registration") -->
+                  <a name="runScenario(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null)">
+                  </a> <!-- runScenario(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is not logged in and username is not reentered correctly", "Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User enters wrong password&quot;, &quot;Logging in&quot;)">
-                  </a> <!-- runScenario("User enters wrong password", "Logging in") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User enters wrong password", "Logging in")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is not logged in username is unique&quot;, &quot;Registration&quot;)">
-                  </a> <!-- runScenario("User is not logged in username is unique", "Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is not logged in username is unique", "Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is not logged in and username is not unique&quot;, &quot;Registration&quot;)">
-                  </a> <!-- runScenario("User is not logged in and username is not unique", "Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is not logged in and username is not unique", "Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is not registered&quot;, &quot;Logging in&quot;)">
-                  </a> <!-- runScenario("User is not registered", "Logging in") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is not registered", "Logging in")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is registered and enters correct password&quot;, &quot;Logging in&quot;)">
-                  </a> <!-- runScenario("User is registered and enters correct password", "Logging in") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is registered and enters correct password", "Logging in")</span>
+                  <span class="parameters">(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: Failed to parse resource at: file:src/test/resources/FeatureFiles/Profile.feature
+	at cucumber.runtime.model.FeatureParser.parseResource(FeatureParser.java:40)
+	at cucumber.runtime.model.FeatureBuilder.parse(FeatureBuilder.java:25)
+	at cucumber.runtime.model.FeatureLoader.loadFromFeaturePath(FeatureLoader.java:36)
+	at cucumber.runtime.model.FeatureLoader.load(FeatureLoader.java:23)
+	at cucumber.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:33)
+	at io.cucumber.testng.TestNGCucumberRunner.getFeatures(TestNGCucumberRunner.java:116)
+	at io.cucumber.testng.TestNGCucumberRunner.provideScenarios(TestNGCucumberRunner.java:98)
+	at cucumber.api.testng.TestNGCucumberRunner.provideScenarios(TestNGCucumberRunner.java:32)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.scenarios(AbstractTestNGCucumberTests.java:40)
+Caused by: gherkin.ParserException$CompositeParserException: Parser errors:
+(122:6): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got &apos;I click on the like button for the first post on my profile&apos;
+(133:6): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got &apos;I enter a comment on the first post in my profile&apos;
+(144:6): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got &apos;I delete the last comment on the first post on my profile&apos;
+	at gherkin.Parser.parse(Parser.java:143)
+	at gherkin.Parser.parse(Parser.java:118)
+	at gherkin.Parser.parse(Parser.java:114)
+	at cucumber.runtime.model.FeatureParser.parseResource(FeatureParser.java:36)
+	... 37 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cucumber_framework-class-passed -->
+          </div> <!-- suite-Cucumber_framework-class-failed -->
         </div> <!-- panel Cucumber_framework -->
         <div panel-name="test-xml-Cucumber_framework" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -270,36 +216,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.RunCuke')
-data.setCell(0, 3, 6778);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runners.RunCuke')
-data.setCell(1, 3, 5812);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runners.RunCuke')
-data.setCell(2, 3, 5746);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'runners.RunCuke')
-data.setCell(3, 3, 5589);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'runners.RunCuke')
-data.setCell(4, 3, 4507);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'runners.RunCuke')
-data.setCell(5, 3, 4346);
+data.setCell(0, 3, 5);
 window.suiteTableData['Cucumber_framework']= { tableData: data, tableDiv: 'times-div-Cucumber_framework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 5 ms</span>
               <div id="times-div-Cucumber_framework">
               </div> <!-- times-div-Cucumber_framework -->
             </div> <!-- times-div -->
@@ -332,35 +258,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">455 ms</span>
+                <span class="method-start">312 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User is not registered", "Logging in")</span>
-                <span class="method-start">556 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User enters wrong password", "Logging in")</span>
-                <span class="method-start">7336 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User is registered and enters correct password", "Logging in")</span>
-                <span class="method-start">11685 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User is not logged in username is unique", "Registration")</span>
-                <span class="method-start">16194 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User is not logged in and username is not unique", "Registration")</span>
-                <span class="method-start">21941 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User is not logged in and username is not reentered correctly", "Registration")</span>
-                <span class="method-start">27754 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario(io.cucumber.testng.CucumberExceptionWrapper@58dea0a5, null)</span>
+                <span class="method-start">365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">33344 ms</span>
+                <span class="method-start">374 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

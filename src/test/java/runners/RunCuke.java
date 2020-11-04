@@ -16,7 +16,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 			"html:target/RunCuke/cucumber.html", 
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		 },
-			features={"src/test/resources/FeatureFiles/Login.feature", "src/test/resources/FeatureFiles/Register.feature"},
+			features={
+			"src/test/resources/FeatureFiles/Profile.feature"
+			},
 			glue="steps"
 			
 		)
