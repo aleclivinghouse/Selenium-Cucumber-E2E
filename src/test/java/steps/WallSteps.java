@@ -1,6 +1,13 @@
 package steps;
 
+import pages.actions.LoginActions;
+import pages.actions.RegisterActions;
+//import pages.actions.WallActions;
+
 public class WallSteps {
+	LoginActions loginActions = new LoginActions();
+	RegisterActions registerActions = new RegisterActions();
+//	WallActions wallActions = new WallActions();
 	/* 
 	And I upload a post on my wall with just text
 	And I upload a post with text and an image on my wall

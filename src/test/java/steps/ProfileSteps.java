@@ -1,6 +1,15 @@
 package steps;
 
+import cucumber.api.java.en.And;
+import pages.actions.LoginActions;
+import pages.actions.RegisterActions;
+//import pages.actions.ProfileActions;
+
 public class ProfileSteps {
+	RegisterActions registerActions = new RegisterActions();
+//	ProfileActions profileActions = new ProfileActions();
+
+	
 	/* 
 	 And I click on my name in the nav
 	 And I am redirected to my profile page

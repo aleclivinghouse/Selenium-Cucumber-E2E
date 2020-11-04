@@ -1,6 +1,13 @@
 package steps;
 
+import pages.actions.LoginActions;
+//import pages.actions.FriendActions;
+import pages.actions.RegisterActions;
+
 public class FriendSteps {
+	LoginActions loginActions = new LoginActions();
+	RegisterActions registerActions = new RegisterActions();
+//	FriendActions friendActions = new FriendActions();
 	
 	/* 
 	 And I open my notifications and accept the friend request

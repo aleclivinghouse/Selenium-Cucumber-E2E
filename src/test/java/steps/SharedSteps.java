@@ -6,6 +6,9 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.actions.LoginActions;
 import pages.actions.RegisterActions;
+//import pages.actions.FriendActions;
+//import pages.actions.ProfileActions;
+//import pages.actions.WallActions;
 import utils.SeleniumDriver;
 
 
@@ -13,6 +16,9 @@ public class SharedSteps {
 	
 	LoginActions loginActions = new LoginActions();
 	RegisterActions registerActions = new RegisterActions();
+//	WallActions wallActions = new WallActions();
+//	ProfileActions profileActions = new ProfileActions();
+  //FriendActions friendActions = new FriendActions();
 	
 	@Given("^I am on the landing page \"([^\"]*)\" of the website$")
 	public void user_navigates_to_landing_page(String url) throws Throwable {
