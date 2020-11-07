@@ -66,7 +66,6 @@ public class ProfileWallActions {
 	
 	//I change my birthday
 	public void changeBirthday() {
-		newBirthday = "";
 		String dateString = randomDate();
 		newBirthday += dateString;
 		System.out.println("changeBirthday " + newBirthday);
@@ -96,9 +95,56 @@ public class ProfileWallActions {
 	
 	public void newRelationShipStatusOnScreen() throws InterruptedException {
 		Thread.sleep(1000);
-		System.out.println("newBirthday " + newRelationshipStatus);
 		String actualText = profileLocators.changeRelationShipStatus.getAttribute("value");
 		String expectedText = newRelationshipStatus;
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	public void changeSchool(){
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		newSchool = randomShortened;
+		profileLocators.changeSchool.clear();
+		profileLocators.changeSchool.sendKeys(randomShortened);
+		profileLocators.aboutUserSubmit.click();
+	}
+	
+	public void newSchoolOnScreen() throws InterruptedException {
+		Thread.sleep(1000);
+		String actualText = profileLocators.changeSchool.getAttribute("value");
+		String expectedText = newSchool;
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	public void changeWork(){
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		newWork = randomShortened;
+		profileLocators.changeWork.clear();
+		profileLocators.changeWork.sendKeys(randomShortened);
+		profileLocators.aboutUserSubmit.click();
+	}
+	
+	public void newWorkOnScreen() throws InterruptedException {
+		Thread.sleep(1000);
+		String actualText = profileLocators.changeWork.getAttribute("value");
+		String expectedText = newWork;
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	public void changeCity(){
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		newCurrentTown = randomShortened;
+		profileLocators.changeCurrentTown.clear();
+		profileLocators.changeCurrentTown.sendKeys(randomShortened);
+		profileLocators.aboutUserSubmit.click();
+	}
+	
+	public void newCityOnScreen() throws InterruptedException {
+		Thread.sleep(1000);
+		String actualText = profileLocators.changeCurrentTown.getAttribute("value");
+		String expectedText = newCurrentTown;
 		Assert.assertEquals(actualText, expectedText);
 	}
 	//utils

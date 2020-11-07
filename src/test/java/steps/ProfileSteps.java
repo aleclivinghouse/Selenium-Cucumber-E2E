@@ -45,36 +45,42 @@ public class ProfileSteps {
 		System.out.println("@And -- relationship status appears on screen");
 		profileWallActions.newRelationShipStatusOnScreen();
 	}
-//	
-//	@And("^I change my school$")
-//	public void i_change_my_school() throws Throwable {
-//		System.out.println("@And -- change school");
-//	}
-//	
-//	@Then("^my school should appear on the screen$")
-//	public void my_school_appears_on_screen() throws Throwable {
-//		System.out.println("@Then -- school appears on screen");
-//	}
-//	
-//	@And("^I change my work$")
-//	public void i_change_my_work() throws Throwable {
-//		System.out.println("@And -- change work");
-//	}
-//	
-//	@Then("^my work should appear on the screen$")
-//	public void my_work_appears_on_screen() throws Throwable {
-//		System.out.println("@Then -- work appears on screen");
-//	}
-//	
-//	@And("^I change my city$")
-//	public void i_change_my_city() throws Throwable {
-//		System.out.println("@And -- change city");
-//	}
-//	
-//	@Then("^my city should appear on the screen$")
-//	public void my_city_appears_on_screen() throws Throwable {
-//		System.out.println("@Then -- city appears on screen");
-//	}
+	
+	@And("^I change my school$")
+	public void i_change_my_school() throws Throwable {
+		System.out.println("@And -- change school");
+		profileWallActions.changeSchool();
+	}
+	
+	@Then("^my school should appear on the screen$")
+	public void my_school_appears_on_screen() throws Throwable {
+		System.out.println("@Then -- school appears on screen");
+		profileWallActions.newSchoolOnScreen();
+	}
+	
+	@And("^I change my work$")
+	public void i_change_my_work() throws Throwable {
+		System.out.println("@And -- change work");
+		profileWallActions.changeWork();
+	}
+	
+	@Then("^my work should appear on the screen$")
+	public void my_work_appears_on_screen() throws Throwable {
+		System.out.println("@Then -- work appears on screen");
+		profileWallActions.newWorkOnScreen();
+	}
+	
+	@And("^I change my city$")
+	public void i_change_my_city() throws Throwable {
+		System.out.println("@And -- change city");
+		profileWallActions.changeCity();
+	}
+	
+	@Then("^my city should appear on the screen$")
+	public void my_city_appears_on_screen() throws Throwable {
+		System.out.println("@Then -- city appears on screen");
+		profileWallActions.newCityOnScreen();
+	}
 //	
 //	@And("^I upload a new cover photo$")
 //	public void i_upload_new_cover_photo() throws Throwable {
