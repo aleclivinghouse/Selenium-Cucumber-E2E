@@ -56,7 +56,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 7, 2020 01:27:40 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 7, 2020 03:32:56 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -128,7 +128,7 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -144,7 +144,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>36</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>45</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -170,7 +170,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Profile</span>
-						<span class='test-time'>Nov 7, 2020 01:27:43 PM</span>
+						<span class='test-time'>Nov 7, 2020 03:32:59 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -182,7 +182,7 @@
 </div>
 <div class='test-desc'>I want to see if the users profile page functions correctly</div>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 6s+485ms</span>
+	<span class='duration right label'>0h 0m 4s+978ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: I want to change my relationship status</div>
 	</div>
@@ -226,7 +226,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='14' status='pass'>
-	<span class='duration right label'>0h 0m 6s+558ms</span>
+	<span class='duration right label'>0h 0m 4s+922ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: I want to change my school</div>
 	</div>
@@ -270,7 +270,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='26' status='pass'>
-	<span class='duration right label'>0h 0m 6s+221ms</span>
+	<span class='duration right label'>0h 0m 4s+880ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: I want to change my work</div>
 	</div>
@@ -314,7 +314,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='38' status='pass'>
-	<span class='duration right label'>0h 0m 6s+200ms</span>
+	<span class='duration right label'>0h 0m 4s+898ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: I want to change my city</div>
 	</div>
@@ -357,6 +357,50 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario node' test-id='50' status='pass'>
+	<span class='duration right label'>0h 0m 7s+47ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: I enter a post on my profile with just text:</div>
+	</div>
+	<ul class='steps'>
+		<li test-id='52' class='node given pass' status='pass'>
+			<div class="step-name" title="SharedSteps.user_navigates_to_landing_page(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='53' class='node when pass' status='pass'>
+			<div class="step-name" title="SharedSteps.user_uses_correct_email(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I fill in email with "testuser1@livinghouse.com"</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='54' class='node and pass' status='pass'>
+			<div class="step-name" title="SharedSteps.user_uses_correct_password(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I fill in password with "password"</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='55' class='node and pass' status='pass'>
+			<div class="step-name" title="SharedSteps.i_press_Sign_in()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I press Sign in</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='56' class='node and pass' status='pass'>
+			<div class="step-name" title="SharedSteps.redirected_to_home_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I am redirected to my home page</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			<div class="step-name" title="ProfileSteps.i_click_on_my_name_in_the_nav()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on my name in the nav</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='58' class='node and pass' status='pass'>
+			<div class="step-name" title="ProfileSteps.i_am_redirected_to_the_profile_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I am redirected to my profile page</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='59' class='node and pass' status='pass'>
+			<div class="step-name" title="ProfileSteps.i_upload_a_post_just_text()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I upload a post on my profile with just text</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='60' class='node then pass' status='pass'>
+			<div class="step-name" title="SharedSteps.the_post_is_displayed_as_the_first_profile_on_my_wall()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then the post I wrote is displayed as the first post on my profile and my wall</div>
+			<div class="node-step"></div>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -393,31 +437,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>36</div>
+					<div class='panel-lead'>45</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 7, 2020 01:27:40 PM</div>
+					<div class='panel-lead'>Nov 7, 2020 03:32:56 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 7, 2020 01:28:13 PM</div>
+			 		<div class='panel-lead'>Nov 7, 2020 03:33:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 33s+833ms</div>
+					<div class='panel-lead'>0h 0m 35s+153ms</div>
 				</div>
 			</div>
 		</div>
@@ -436,8 +480,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 4,
-				passChild: 4,
+				childCount: 5,
+				passChild: 5,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -446,8 +490,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 36,
-				passGrandChild: 36,
+				grandChildCount: 45,
+				passGrandChild: 45,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -460,7 +504,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Profile":30.098
+			        "Profile":32.343
 			};
 		</script>
 	

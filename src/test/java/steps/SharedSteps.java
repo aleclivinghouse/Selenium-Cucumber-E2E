@@ -6,6 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.actions.LoginActions;
 import pages.actions.RegisterActions;
+import pages.actions.ProfileWallActions;
 //import pages.actions.FriendActions;
 //import pages.actions.ProfileActions;
 //import pages.actions.WallActions;
@@ -16,8 +17,7 @@ public class SharedSteps {
 	
 	LoginActions loginActions = new LoginActions();
 	RegisterActions registerActions = new RegisterActions();
-//	WallActions wallActions = new WallActions();
-//	ProfileActions profileActions = new ProfileActions();
+	ProfileWallActions profileWallActions = new ProfileWallActions();
   //FriendActions friendActions = new FriendActions();
 	
 	@Given("^I am on the landing page \"([^\"]*)\" of the website$")
@@ -115,10 +115,12 @@ public class SharedSteps {
 	}
 	
 	
-	@Then("^the post is displayed as the first post on my profile and my wall$")
+	@Then("^the post I wrote is displayed as the first post on my profile and my wall$")
 	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
 		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
+		profileWallActions.newPostShowsOnWallAndProfile();
 	}
+	
 	
 	@Then("^the post does not display on my profile or my wall$")
 	public void the_post_does_not_display_on_my_profile_or_my_wall() throws Throwable {

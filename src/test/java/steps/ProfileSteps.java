@@ -107,11 +107,13 @@ public class ProfileSteps {
 //		System.out.println("@And -- I am redirected to my profile page");
 //	}
 //	
-//	@And("^I upload a post on my profile with just text$")
-//	public void i_upload_a_post_just_text() throws Throwable {
-//		System.out.println("@And -- I upload a post on my profile with just text");
-//	}
-//	
+	
+	@And("^I upload a post on my profile with just text$")
+	public void i_upload_a_post_just_text() throws Throwable {
+		System.out.println("@And -- I upload a post on my profile with just text");
+		profileWallActions.postJustText();
+		
+	}	
 //	@And("^I upload a post with text and an image on my profile$")
 //	public void i_upload_a_post_text_image() throws Throwable {
 //		System.out.println("@And -- I upload a post on my profile with text image");

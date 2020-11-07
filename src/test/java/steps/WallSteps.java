@@ -1,6 +1,7 @@
 package steps;
 
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
 import pages.actions.LoginActions;
 import pages.actions.RegisterActions;
 //import pages.actions.WallActions;
@@ -47,6 +48,12 @@ public class WallSteps {
 	@And("^I like the first post in his feed$")
 	public void i_like_post_wall() throws Throwable {
 		System.out.println("@And -- I like the first post in his feed");
+	}
+	
+	@Then("^the post I wrote on my wall is displayed as the first post on my profile and my wall$")
+	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
+		
+		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
 	}
 	
 }

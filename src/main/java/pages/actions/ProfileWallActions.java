@@ -147,6 +147,36 @@ public class ProfileWallActions {
 		String expectedText = newCurrentTown;
 		Assert.assertEquals(actualText, expectedText);
 	}
+	
+	public void postJustText() {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostWall = randomShortened;
+		profileLocators.postTextArea.clear();
+		profileLocators.postTextArea.sendKeys(randomShortened);
+		profileLocators.postSubmit.click();
+	}
+	
+	public void newPostShowsOnWallAndProfile() throws InterruptedException {
+		navLocators.navProfile.click();
+		Thread.sleep(1000);
+		String flag = "false";
+		String expectedText = textPostWall;
+		String profileActualText = profileLocators.firstPostInFeed.getText();
+		 if(profileActualText == expectedText) {
+			  flag = "true";
+		  }
+		//now we have to actually
+		navLocators.navHome.click();
+		Thread.sleep(1000);
+		String wallActualText = homeLocators.FirstPostText.getText();
+	    if(wallActualText == expectedText) {
+			  flag = "true";
+		  }
+		Assert.assertEquals(flag, "false");
+	}
+	
+	
 	//utils
 	public String randomDate(){
 		GregorianCalendar gc = new GregorianCalendar();

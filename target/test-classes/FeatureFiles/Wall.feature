@@ -18,7 +18,7 @@ Feature: Wall
 	    And I press Sign in
 	    And I am redirected to my home page
     	And I upload a post with text and an image on my wall
-    	Then the post is displayed as the first post on my profile and the text and the image are both included
+    	Then the post I wrote on my wall is displayed as the first post on my profile and the text and the image are both included
     	
     Scenario: I enter a post on my wall with just an image:
  		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
