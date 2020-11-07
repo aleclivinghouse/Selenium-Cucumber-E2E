@@ -10,6 +10,9 @@ public class ProfileLocators {
 	@FindBy(how=How.ID ,using="profile-cover-input")
 	public WebElement uploadCoverPhoto;
 	
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[1]/div[1]/div[2]/div/div/div")
+	public WebElement uploadCoverPhotoText;
+	
 	//change profile info
 	@FindBy(how=How.NAME ,using="birthday")
 	public WebElement changeBirthDay;

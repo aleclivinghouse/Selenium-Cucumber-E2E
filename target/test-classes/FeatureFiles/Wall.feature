@@ -1,7 +1,7 @@
 Feature: Wall
 	I want to see if the wall on my home page functions correctly
 
-Scenario: I enter a post on my wall with just text:
+	Scenario: I enter a post on my wall with just text:
  		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
 		When I fill in email with "testuser1@livinghouse.com"
 	    And I fill in password with "password"
@@ -9,6 +9,7 @@ Scenario: I enter a post on my wall with just text:
 	    And I am redirected to my home page
     	And I upload a post on my wall with just text
     	Then the post is displayed as the first post on my profile and my wall
+    	
     	
      Scenario: I enter a post on my wall with text and an image:
  		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website

@@ -1,1 +1,172 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-07T21:03:24.842Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2217084454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "I want to change my relationship status",
+        "description": "",
+        "id": "profile;i-want-to-change-my-relationship-status",
+        "after": [
+          {
+            "result": {
+              "duration": 111459615,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2031336632,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152010294,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100201923,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49208706,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1037143130,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77436158,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1031083114,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139420283,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I change my relationship status",
+            "match": {
+              "location": "ProfileSteps.i_change_my_relationship_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1029008859,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "my relationship status should appear on the screen",
+            "match": {
+              "location": "ProfileSteps.my_relationship_status_appears_on_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Profile",
+    "description": "\tI want to see if the users profile page functions correctly",
+    "id": "profile",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Profile.feature",
+    "tags": []
+  }
+]

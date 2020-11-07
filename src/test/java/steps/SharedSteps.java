@@ -114,10 +114,6 @@ public class SharedSteps {
 		registerActions.PressSignUp();
 	}
 	
-	@And("^I am redirected to my home page$")
-	public void i_am_redirected_to_my_homepage() throws Throwable {
-		System.out.println("@And -- I am redirected to my homepage");
-	}
 	
 	@Then("^the post is displayed as the first post on my profile and my wall$")
 	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
@@ -154,11 +150,11 @@ public class SharedSteps {
 		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
 	}
 	
-	@And("^I search \"([^\"*)\" and select the first result$")
+	@And("^I search \"([^\"]*)\" and select the first result$")
 	public void search_user(String name) throws Throwable {
 	}
 	
-	@And("^I log in as \"([^\"*)\"$")
+	@And("^I log in as \"([^\"*])\"$")
 	public void log_in_as(String name) throws Throwable {
 		System.out.println("@And -- I log in as test user 1");
 	}

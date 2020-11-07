@@ -8,7 +8,6 @@ public class NavLocators {
 	
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/header/div/div[2]/ul[1]/li[1]/a")
 	public WebElement navProfile;
-	
 
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/header/div/div[2]/ul[1]/li[2]/a")
 	public WebElement navHome;
