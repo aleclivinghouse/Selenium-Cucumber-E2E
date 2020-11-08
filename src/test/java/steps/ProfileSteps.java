@@ -111,7 +111,7 @@ public class ProfileSteps {
 	@And("^I upload a post on my profile with just text$")
 	public void i_upload_a_post_just_text() throws Throwable {
 		System.out.println("@And -- I upload a post on my profile with just text");
-		profileWallActions.postJustText();
+		profileWallActions.postJustTextProfile();
 		
 	}	
 //	@And("^I upload a post with text and an image on my profile$")

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 07 15:32:56 PST 2020</td>
+<td>Started on:</td><td>Sun Nov 08 11:01:10 PST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35708 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,34 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I enter a post on my profile with just text:", "Profile"</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at pages.actions.ProfileWallActions.newPostShowsOnWallAndProfile(ProfileWallActions.java:188)
+	at steps.SharedSteps.the_post_is_displayed_as_the_first_profile_on_my_wall(SharedSteps.java:121)
+	at ✽.the post I wrote is displayed as the first post on my profile and my wall(file:src/test/resources/FeatureFiles/Profile.feature:68)
+</pre></div><a href='#' onClick='toggleBox("stack-trace286606142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace286606142'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at pages.actions.ProfileWallActions.newPostShowsOnWallAndProfile(ProfileWallActions.java:188)
+	at steps.SharedSteps.the_post_is_displayed_as_the_first_profile_on_my_wall(SharedSteps.java:121)
+	at ✽.the post I wrote is displayed as the first post on my profile and my wall(file:src/test/resources/FeatureFiles/Profile.feature:68)
+</pre></div></td>
+<td>12</td>
+<td>runners.RunCuke@5bf0fe62</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -93,11 +121,6 @@ function toggleAllBoxes() {
 <td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to change my city", "Profile"</td>
 <td></td>
 <td>6</td>
-<td>runners.RunCuke@5bf0fe62</td></tr>
-<tr>
-<td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I enter a post on my profile with just text:", "Profile"</td>
-<td></td>
-<td>8</td>
 <td>runners.RunCuke@5bf0fe62</td></tr>
 </table><p>
 </body>

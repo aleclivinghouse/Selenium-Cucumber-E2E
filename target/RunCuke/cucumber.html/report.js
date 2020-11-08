@@ -504,8 +504,10 @@ formatter.match({
   "location": "SharedSteps.the_post_is_displayed_as_the_first_profile_on_my_wall()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat pages.actions.ProfileWallActions.newPostShowsOnWallAndProfile(ProfileWallActions.java:188)\n\tat steps.SharedSteps.the_post_is_displayed_as_the_first_profile_on_my_wall(SharedSteps.java:121)\n\tat ✽.the post I wrote is displayed as the first post on my profile and my wall(file:src/test/resources/FeatureFiles/Profile.feature:68)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });

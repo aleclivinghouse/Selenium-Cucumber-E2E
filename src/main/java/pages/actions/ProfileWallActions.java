@@ -5,7 +5,11 @@ import java.util.GregorianCalendar;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+
+import com.gargoylesoftware.htmlunit.javascript.host.Console;
+
 import org.junit.Assert;
 
 import pages.locators.ProfileLocators;
@@ -23,16 +27,12 @@ public class ProfileWallActions {
 	String newSchool = null;
 	String newWork = null;
 	String newCurrentTown = null;
-	
-	HomeLocators homeLocators = null;
-	ProfileLocators profileLocators = null;
-	NavLocators navLocators = null;
 	String textPostWall = null;
 	String textPostProfile = null;
 	String textImagePostProfile = null;
 	String textImagePostWall = null;
-	String likeWall = null;
-	String likeProfile = null;
+	int  likeWall = 0;
+	int likeProfile = 0;
 	String commentWall = null;
 	String commentProfile = null;
 	String deleteCommentWall = null;
@@ -40,6 +40,10 @@ public class ProfileWallActions {
 	String otherUserLikeWall = null;
 	String otherUserLikeProfile = null;
 	String otherUserCommentWall = null;
+	
+	HomeLocators homeLocators = null;
+	ProfileLocators profileLocators = null;
+	NavLocators navLocators = null;
 	
 	JavascriptExecutor js = (JavascriptExecutor)SeleniumDriver.getDriver();
 	
@@ -136,6 +140,7 @@ public class ProfileWallActions {
 		String random = UUID.randomUUID().toString();
 		String randomShortened = random.substring(random.length() - 10);
 		newCurrentTown = randomShortened;
+		System.out.println("this is changeCity newCurrentTown: " + newCurrentTown);
 		profileLocators.changeCurrentTown.clear();
 		profileLocators.changeCurrentTown.sendKeys(randomShortened);
 		profileLocators.aboutUserSubmit.click();
@@ -144,14 +149,17 @@ public class ProfileWallActions {
 	public void newCityOnScreen() throws InterruptedException {
 		Thread.sleep(1000);
 		String actualText = profileLocators.changeCurrentTown.getAttribute("value");
+		System.out.println("this is newCityOnSCreen actualText: " + actualText);
 		String expectedText = newCurrentTown;
+		System.out.println("this is newCityOnSCreen expectedText: " + expectedText);
 		Assert.assertEquals(actualText, expectedText);
 	}
 	
-	public void postJustText() {
+	public void postJustTextProfile() {
 		String random = UUID.randomUUID().toString();
 		String randomShortened = random.substring(random.length() - 10);
-		textPostWall = randomShortened;
+		textPostProfile = randomShortened;
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
 		profileLocators.postTextArea.clear();
 		profileLocators.postTextArea.sendKeys(randomShortened);
 		profileLocators.postSubmit.click();
@@ -159,21 +167,90 @@ public class ProfileWallActions {
 	
 	public void newPostShowsOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
-		Thread.sleep(1000);
-		String flag = "false";
-		String expectedText = textPostWall;
+		Thread.sleep(3000);
+		boolean flag = true;
+		String expectedText = textPostProfile;
+		System.out.println("this is textPostProfile in newPostShowsOnWallAndProfile: " + expectedText);
+		System.out.println("this is expectedText after being assigned: " + expectedText);
+		System.out.println("this is expected text: " + expectedText);
 		String profileActualText = profileLocators.firstPostInFeed.getText();
-		 if(profileActualText == expectedText) {
-			  flag = "true";
+		System.out.println("this is profile actual text: " + profileActualText);
+		 if(profileActualText != expectedText) {
+			  flag = false;
+		  }
+		//now we have to actually
+		navLocators.navHome.click();
+		Thread.sleep(3000);
+		String wallActualText = homeLocators.FirstPostText.getText();
+		System.out.println("this is wall actual text: " + wallActualText);
+	    if(wallActualText != expectedText) {
+			  flag = false;
+		  }
+		Assert.assertTrue(flag);
+	}
+	
+	public void postCommentProfile() {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		commentProfile = randomShortened;
+		profileLocators.firstPostCommentInput.clear();
+		profileLocators.firstPostCommentInput.sendKeys(randomShortened);
+		profileLocators.firstPostCommentInput.sendKeys(Keys.ENTER);
+	}
+	
+	public void newCommentShowsOnWallAndProfile() throws InterruptedException {
+		navLocators.navProfile.click();
+		Thread.sleep(1000);
+		String flag = "t";
+		String expectedText = commentProfile;
+		String profileActualText = profileLocators.firstPostLastComment.getText();
+		 if(profileActualText != expectedText) {
+			  flag = "f";
 		  }
 		//now we have to actually
 		navLocators.navHome.click();
 		Thread.sleep(1000);
-		String wallActualText = homeLocators.FirstPostText.getText();
-	    if(wallActualText == expectedText) {
-			  flag = "true";
+		String wallActualText = homeLocators.firstPostLastComment.getText();
+	    if(wallActualText != expectedText) {
+			  flag = "false";
 		  }
-		Assert.assertEquals(flag, "false");
+		Assert.assertEquals("t", flag);
+	}
+	
+	
+	public void LikeFirstPostOnProfile(){
+		String likeCount = profileLocators.firstPostInFeedLikeCount.getAttribute("innerHTML");
+		likeCount = likeCount.replaceAll("<i.*?/>", " ");
+		likeCount = likeCount.replaceAll("like", " ");
+		likeCount = likeCount.trim();
+		likeProfile = Integer.parseInt(likeCount);
+		System.out.println("this is like count text in likeFirstPostOnProfile");
+		profileLocators.firstPostInFeed.click();
+	}
+	
+	public void firstPostLikeShowsUp() throws InterruptedException {
+		navLocators.navProfile.click();
+		Thread.sleep(1000);
+		String likeCountProfile = profileLocators.firstPostInFeedLikeCount.getAttribute("innerHTML");
+		String likeCountWall = homeLocators.firstPostLikeCount.getAttribute("innerHTML");
+		String flag = "true";
+		likeCountProfile = likeCountProfile.replaceAll("<i.*?/>", " ");
+		likeCountProfile = likeCountProfile.replaceAll("like", " ");
+		likeCountProfile = likeCountProfile.trim();
+		int likeCountProfileNum = Integer.parseInt(likeCountProfile);
+		likeCountWall = likeCountWall.replaceAll("<i.*?/>", " ");
+		likeCountWall = likeCountWall.replaceAll("like", " ");
+		likeCountWall = likeCountWall.trim();
+		int likeCountWallNum = Integer.parseInt(likeCountWall);
+		if(likeCountProfileNum != likeProfile + 1) {
+			flag = "false";
+		}
+		navLocators.navHome.click();
+		Thread.sleep(1000);
+		if(likeCountWallNum != likeProfile + 1) {
+			flag = "false";
+		}
+		Assert.assertEquals(flag, "true");
 	}
 	
 	
