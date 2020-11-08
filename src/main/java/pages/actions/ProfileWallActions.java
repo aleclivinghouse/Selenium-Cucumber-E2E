@@ -174,7 +174,7 @@ public class ProfileWallActions {
 		System.out.println("this is expected text: " + expectedText);
 		String profileActualText = profileLocators.firstPostInFeed.getText();
 		System.out.println("this is profile actual text: " + profileActualText);
-		 if(profileActualText != expectedText) {
+		 if(!profileActualText.equals(expectedText)) {
 			  flag = false;
 		  }
 		//now we have to actually
@@ -182,7 +182,7 @@ public class ProfileWallActions {
 		Thread.sleep(3000);
 		String wallActualText = homeLocators.FirstPostText.getText();
 		System.out.println("this is wall actual text: " + wallActualText);
-	    if(wallActualText != expectedText) {
+	    if(!wallActualText.equals(expectedText)) {
 			  flag = false;
 		  }
 		Assert.assertTrue(flag);
