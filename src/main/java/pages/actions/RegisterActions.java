@@ -9,6 +9,7 @@ import java.util.UUID;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Console;
 
 import pages.locators.LoginRegisterLocators;
 import pages.locators.NavLocators;
@@ -124,14 +125,19 @@ public class RegisterActions {
 	}
 	
 	public void errorMessage() throws InterruptedException {
-		  Thread.sleep(1000);
-		  String flag = "false";
+		  Thread.sleep(3000);
+		  boolean flag = false;
 		  String error1Text = logInRegisterLocators.emailError.getText();
+		  error1Text = error1Text.trim();
+		  System.out.println("this is error text 1: " + error1Text);
 		  String error2Text = logInRegisterLocators.emailError.getText();
-		  if(error1Text == "warning" && error2Text == "warning") {
-			  flag = "true";
+		  error2Text = error2Text.trim();
+		  System.out.println("this is error text 2: " + error2Text);
+		  if(error1Text.equals("warning") && error2Text.equals("warning")) {
+			  System.out.println("if triggered");
+			  flag = true;
 		  }
-		 Assert.assertEquals(flag, "false");
+		  Assert.assertTrue(flag);
 	}
 	
 	public void redirectedToHomePage() throws InterruptedException {

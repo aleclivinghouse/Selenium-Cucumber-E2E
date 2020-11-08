@@ -113,7 +113,14 @@ public class ProfileSteps {
 		System.out.println("@And -- I upload a post on my profile with just text");
 		profileWallActions.postJustTextProfile();
 		
-	}	
+	}
+	
+	@Then("^the post I wrote is displayed as the first post on my profile and my wall$")
+	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
+		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
+		profileWallActions.newPostShowsOnWallAndProfile();
+	}
+	
 //	@And("^I upload a post with text and an image on my profile$")
 //	public void i_upload_a_post_text_image() throws Throwable {
 //		System.out.println("@And -- I upload a post on my profile with text image");

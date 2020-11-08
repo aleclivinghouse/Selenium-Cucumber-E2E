@@ -45,7 +45,6 @@ public class ProfileWallActions {
 	ProfileLocators profileLocators = null;
 	NavLocators navLocators = null;
 	
-	JavascriptExecutor js = (JavascriptExecutor)SeleniumDriver.getDriver();
 	
 	public ProfileWallActions(){
 		this.homeLocators = new HomeLocators();
@@ -55,7 +54,7 @@ public class ProfileWallActions {
 		PageFactory.initElements(SeleniumDriver.getDriver(),profileLocators);
 		PageFactory.initElements(SeleniumDriver.getDriver(),navLocators);
 	}
-
+	
 	//I click on my name in the nav
 	public void clickOnNameInNav() {
 		navLocators.navProfile.click();
@@ -201,20 +200,20 @@ public class ProfileWallActions {
 	public void newCommentShowsOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
 		Thread.sleep(1000);
-		String flag = "t";
+		boolean flag = true;
 		String expectedText = commentProfile;
 		String profileActualText = profileLocators.firstPostLastComment.getText();
 		 if(profileActualText != expectedText) {
-			  flag = "f";
+			  flag = false;
 		  }
 		//now we have to actually
 		navLocators.navHome.click();
 		Thread.sleep(1000);
 		String wallActualText = homeLocators.firstPostLastComment.getText();
 	    if(wallActualText != expectedText) {
-			  flag = "false";
+			  flag = false;
 		  }
-		Assert.assertEquals("t", flag);
+		Assert.assertTrue(flag);
 	}
 	
 	
@@ -233,7 +232,7 @@ public class ProfileWallActions {
 		Thread.sleep(1000);
 		String likeCountProfile = profileLocators.firstPostInFeedLikeCount.getAttribute("innerHTML");
 		String likeCountWall = homeLocators.firstPostLikeCount.getAttribute("innerHTML");
-		String flag = "true";
+		boolean flag = true;
 		likeCountProfile = likeCountProfile.replaceAll("<i.*?/>", " ");
 		likeCountProfile = likeCountProfile.replaceAll("like", " ");
 		likeCountProfile = likeCountProfile.trim();
@@ -243,14 +242,14 @@ public class ProfileWallActions {
 		likeCountWall = likeCountWall.trim();
 		int likeCountWallNum = Integer.parseInt(likeCountWall);
 		if(likeCountProfileNum != likeProfile + 1) {
-			flag = "false";
+			flag = false;
 		}
 		navLocators.navHome.click();
 		Thread.sleep(1000);
 		if(likeCountWallNum != likeProfile + 1) {
-			flag = "false";
+			flag = false;
 		}
-		Assert.assertEquals(flag, "true");
+		Assert.assertTrue(flag);
 	}
 	
 	

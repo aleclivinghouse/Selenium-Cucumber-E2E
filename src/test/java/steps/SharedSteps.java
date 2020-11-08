@@ -115,54 +115,50 @@ public class SharedSteps {
 	}
 	
 	
-	@Then("^the post I wrote is displayed as the first post on my profile and my wall$")
-	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
-		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
-		profileWallActions.newPostShowsOnWallAndProfile();
-	}
 	
-	
-	@Then("^the post does not display on my profile or my wall$")
-	public void the_post_does_not_display_on_my_profile_or_my_wall() throws Throwable {
-		System.out.println("@Then -- the post does not display on my profile or my wall");
-	}
-	
-	@Then("^the like count goes up by one on my profile and on my wall$")
-	public void the_like_count_goes_up() throws Throwable {
-		System.out.println("@Then -- the post does not display on my profile or my wall");
-	}
-	
-	@Then("^the comment appears as the last comment on the first post on my profile and on my wall$")
-	public void the_comment_appears() throws Throwable {
-		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
-	}
-	
-	@Then("^the last comment on the first post in my profile and on my wall disappears$")
-	public void the_comment_disappears() throws Throwable {
-		System.out.println("@Then -- the last comment on the first post in my profile and on my wall disappears");
-	}
-	
-	@Then("the comment from the random user shows up as the last comment on the first post on my profile and on my wall$")
-	public void the_comment_appears_from_the_random_user() throws Throwable {
-		System.out.println("@Then -- Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall");
-	}
-	
-	@Then("^the like count on the first post on my profile and on my wall gets incremented by one$")
-	public void the_like_count_incremented() throws Throwable {
-		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
-	}
-	
-	@And("^I search \"([^\"]*)\" and select the first result$")
-	public void search_user(String name) throws Throwable {
-	}
-	
-	@And("^I log in as \"([^\"*])\"$")
-	public void log_in_as(String name) throws Throwable {
-		System.out.println("@And -- I log in as test user 1");
-	}
-	
-	@And("^And I log out$")
-	public void log_out(String name) throws Throwable {
-		System.out.println("@And -- I log out");
-	}
+//	@Then("^the post does not display on my profile or my wall$")
+//	public void the_post_does_not_display_on_my_profile_or_my_wall() throws Throwable {
+//		System.out.println("@Then -- the post does not display on my profile or my wall");
+//	}
+//	
+//	@Then("^the like count goes up by one on my profile and on my wall$")
+//	public void the_like_count_goes_up() throws Throwable {
+//		System.out.println("@Then -- the post does not display on my profile or my wall");
+//		profileWallActions.firstPostLikeShowsUp();
+//	}
+//	
+//	@Then("^the comment appears as the last comment on the first post on my profile and on my wall$")
+//	public void the_comment_appears() throws Throwable {
+//		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
+//		profileWallActions.newCommentShowsOnWallAndProfile();
+//	}
+//	
+//	@Then("^the last comment on the first post in my profile and on my wall disappears$")
+//	public void the_comment_disappears() throws Throwable {
+//		System.out.println("@Then -- the last comment on the first post in my profile and on my wall disappears");
+//	}
+//	
+//	@Then("the comment from the random user shows up as the last comment on the first post on my profile and on my wall$")
+//	public void the_comment_appears_from_the_random_user() throws Throwable {
+//		System.out.println("@Then -- Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall");
+//	}
+//	
+//	@Then("^the like count on the first post on my profile and on my wall gets incremented by one$")
+//	public void the_like_count_incremented() throws Throwable {
+//		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
+//	}
+//	
+//	@And("^I search \"([^\"]*)\" and select the first result$")
+//	public void search_user(String name) throws Throwable {
+//	}
+//	
+//	@And("^I log in as \"([^\"*])\"$")
+//	public void log_in_as(String name) throws Throwable {
+//		System.out.println("@And -- I log in as test user 1");
+//	}
+//	
+//	@And("^And I log out$")
+//	public void log_out(String name) throws Throwable {
+//		System.out.println("@And -- I log out");
+//	}
 }
