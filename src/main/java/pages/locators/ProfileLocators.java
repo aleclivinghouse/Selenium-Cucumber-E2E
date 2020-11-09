@@ -58,11 +58,12 @@ public class ProfileLocators {
 	public WebElement firstPostInFeed;
 	
 	//like the first post in the feed
+	                   
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[1]/div[3]/div[1]")
 	public WebElement likeFirstPostInFeed;
 	
 	//like count of the first post in the feed
-	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[2]/div[1]")
+	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[3]/div/div[2]/div[2]/div[1])/text()")
 	public WebElement firstPostInFeedLikeCount;
 	
 	//edit/delete post dropdown
@@ -79,7 +80,7 @@ public class ProfileLocators {
 	
 	//comments
 	//select the last comment made on the first post in the feed
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[3]/div/div[2]/div[2]/div/div/div)[last()-1]/div[2]/div[2]")
+	@FindBy(how=How.CSS ,using="#root > div > section > div.profile-body-content > div > div:nth-child(2) > div.post-content-footer > div > div > div.post-comment-article.group:nth-last-child(2) > div.post-comment-text > div.post-comment-body")
 	public WebElement firstPostLastComment;
 	
 	//delete the last comment made on the first post in the feed

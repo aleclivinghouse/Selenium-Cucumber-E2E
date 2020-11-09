@@ -127,11 +127,7 @@ public class SharedSteps {
 //		profileWallActions.firstPostLikeShowsUp();
 //	}
 //	
-//	@Then("^the comment appears as the last comment on the first post on my profile and on my wall$")
-//	public void the_comment_appears() throws Throwable {
-//		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
-//		profileWallActions.newCommentShowsOnWallAndProfile();
-//	}
+
 //	
 //	@Then("^the last comment on the first post in my profile and on my wall disappears$")
 //	public void the_comment_disappears() throws Throwable {
@@ -143,10 +139,7 @@ public class SharedSteps {
 //		System.out.println("@Then -- Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall");
 //	}
 //	
-//	@Then("^the like count on the first post on my profile and on my wall gets incremented by one$")
-//	public void the_like_count_incremented() throws Throwable {
-//		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
-//	}
+
 //	
 //	@And("^I search \"([^\"]*)\" and select the first result$")
 //	public void search_user(String name) throws Throwable {

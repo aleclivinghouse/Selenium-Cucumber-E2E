@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cucumber_framework" class="navigator-link">
-              <span class="suite-name border-passed">Cucumber_framework</span>
+              <span class="suite-name border-failed">Cucumber_framework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cucumber_framework" class="hide-methods failed suite-Cucumber_framework"> (hide)</a> <!-- hide-methods failed suite-Cucumber_framework -->
+                      <a href="#" panel-name="suite-Cucumber_framework" class="show-methods failed suite-Cucumber_framework"> (show)</a> <!-- show-methods failed suite-Cucumber_framework -->
+                    </span>
+                    <div class="method-list-content failed suite-Cucumber_framework">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I like the first post on my profile&quot;, &quot;Profile&quot;)">runScenario("I like the first post on my profile", "Profile")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cucumber_framework -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,17 @@
                     <div class="method-list-content passed suite-Cucumber_framework">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I want to change my city&quot;, &quot;Profile&quot;)">runScenario("I want to change my city", "Profile")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I enter a post on my profile with just text:&quot;, &quot;Profile&quot;)">runScenario("I enter a post on my profile with just text:", "Profile")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I want to change my school&quot;, &quot;Profile&quot;)">runScenario("I want to change my school", "Profile")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,12 +141,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I want to change my school&quot;, &quot;Profile&quot;)">runScenario("I want to change my school", "Profile")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I want to change my city&quot;, &quot;Profile&quot;)">runScenario("I want to change my city", "Profile")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Cucumber_framework" title="runners.RunCuke" class="method navigator-link" hash-for-method="runScenario(&quot;I comment on the first post on my profile&quot;, &quot;Profile&quot;)">runScenario("I comment on the first post on my profile", "Profile")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Cucumber_framework -->
@@ -137,6 +156,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cucumber_framework" class="panel Cucumber_framework">
+          <div class="suite-Cucumber_framework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.RunCuke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;I like the first post on my profile&quot;, &quot;Profile&quot;)">
+                  </a> <!-- runScenario("I like the first post on my profile", "Profile") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("I like the first post on my profile", "Profile")</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.actions.ProfileWallActions.firstPostLikeShowsOnWallAndProfile(ProfileWallActions.java:252)
+	at steps.ProfileSteps.the_like_count_incremented(ProfileSteps.java:143)
+	at ✽.the like count goes up by one on my profile and on my wall(file:src/test/resources/FeatureFiles/Profile.feature:90)
+... Removed 1 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cucumber_framework-class-failed -->
           <div class="suite-Cucumber_framework-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,10 +195,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;I want to change my city&quot;, &quot;Profile&quot;)">
+                  </a> <!-- runScenario("I want to change my city", "Profile") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("I want to change my city", "Profile")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;I enter a post on my profile with just text:&quot;, &quot;Profile&quot;)">
                   </a> <!-- runScenario("I enter a post on my profile with just text:", "Profile") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("I enter a post on my profile with just text:", "Profile")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;I want to change my school&quot;, &quot;Profile&quot;)">
+                  </a> <!-- runScenario("I want to change my school", "Profile") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("I want to change my school", "Profile")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -175,20 +245,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;I want to change my school&quot;, &quot;Profile&quot;)">
-                  </a> <!-- runScenario("I want to change my school", "Profile") -->
+                  <a name="runScenario(&quot;I comment on the first post on my profile&quot;, &quot;Profile&quot;)">
+                  </a> <!-- runScenario("I comment on the first post on my profile", "Profile") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("I want to change my school", "Profile")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;I want to change my city&quot;, &quot;Profile&quot;)">
-                  </a> <!-- runScenario("I want to change my city", "Profile") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("I want to change my city", "Profile")</span>
+                  <span class="parameters">("I comment on the first post on my profile", "Profile")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -255,32 +315,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.RunCuke')
-data.setCell(0, 3, 11673);
+data.setCell(0, 3, 37598);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.RunCuke')
-data.setCell(1, 3, 7568);
+data.setCell(1, 3, 11508);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.RunCuke')
-data.setCell(2, 3, 7185);
+data.setCell(2, 3, 11365);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runners.RunCuke')
-data.setCell(3, 3, 6978);
+data.setCell(3, 3, 7798);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runners.RunCuke')
-data.setCell(4, 3, 6416);
+data.setCell(4, 3, 7242);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.RunCuke')
+data.setCell(5, 3, 6493);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.RunCuke')
+data.setCell(6, 3, 6191);
 window.suiteTableData['Cucumber_framework']= { tableData: data, tableDiv: 'times-div-Cucumber_framework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Cucumber_framework">
               </div> <!-- times-div-Cucumber_framework -->
             </div> <!-- times-div -->
@@ -313,31 +381,41 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">325 ms</span>
+                <span class="method-start">353 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("I want to change my relationship status", "Profile")</span>
-                <span class="method-start">374 ms</span>
+                <span class="method-start">408 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("I want to change my school", "Profile")</span>
-                <span class="method-start">7561 ms</span>
+                <span class="method-start">8208 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("I want to change my work", "Profile")</span>
-                <span class="method-start">14540 ms</span>
+                <span class="method-start">14703 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("I want to change my city", "Profile")</span>
-                <span class="method-start">20958 ms</span>
+                <span class="method-start">21946 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("I enter a post on my profile with just text:", "Profile")</span>
-                <span class="method-start">28528 ms</span>
+                <span class="method-start">28138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("I comment on the first post on my profile", "Profile")</span>
+                <span class="method-start">39651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("I like the first post on my profile", "Profile")</span>
+                <span class="method-start">51017 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">40202 ms</span>
+                <span class="method-start">88617 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 08 12:58:56 PST 2020</td>
+<td>Started on:</td><td>Mon Nov 09 13:44:42 PST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40701 ms)</td>
+<tr><td>Total time:</td><td>89 seconds (89195 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,43 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I like the first post on my profile", "Profile"</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.actions.ProfileWallActions.firstPostLikeShowsOnWallAndProfile(ProfileWallActions.java:252)
+	at steps.ProfileSteps.the_like_count_incremented(ProfileSteps.java:143)
+	at ✽.the like count goes up by one on my profile and on my wall(file:src/test/resources/FeatureFiles/Profile.feature:90)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace185209393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace185209393'><pre>java.lang.NullPointerException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:559)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.actions.ProfileWallActions.firstPostLikeShowsOnWallAndProfile(ProfileWallActions.java:252)
+	at steps.ProfileSteps.the_like_count_incremented(ProfileSteps.java:143)
+	at ✽.the like count goes up by one on my profile and on my wall(file:src/test/resources/FeatureFiles/Profile.feature:90)
+</pre></div></td>
+<td>37</td>
+<td>runners.RunCuke@5bf0fe62</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -87,15 +124,20 @@ function toggleAllBoxes() {
 <tr>
 <td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to change my work", "Profile"</td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>runners.RunCuke@5bf0fe62</td></tr>
 <tr>
 <td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to change my city", "Profile"</td>
 <td></td>
-<td>7</td>
+<td>6</td>
 <td>runners.RunCuke@5bf0fe62</td></tr>
 <tr>
 <td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I enter a post on my profile with just text:", "Profile"</td>
+<td></td>
+<td>11</td>
+<td>runners.RunCuke@5bf0fe62</td></tr>
+<tr>
+<td title='runners.RunCuke.runScenario()'><b>runScenario</b><br>Test class: runners.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I comment on the first post on my profile", "Profile"</td>
 <td></td>
 <td>11</td>
 <td>runners.RunCuke@5bf0fe62</td></tr>

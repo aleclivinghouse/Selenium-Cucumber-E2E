@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import pages.actions.LoginActions;
 import pages.actions.RegisterActions;
+import utils.SeleniumDriver;
 import pages.actions.ProfileWallActions;
 
 public class ProfileSteps {
@@ -131,15 +132,28 @@ public class ProfileSteps {
 //		System.out.println("@And -- I upload a post on my profile with just an image");
 //	}
 //	
-//	@And("^I click on the like button for the first post on my profile$")
-//	public void i_clcik_the_like_button_profile() throws Throwable {
-//		System.out.println("@And -- I click the like button on my profile");
-//	}
-//	
-//	@And("^I enter a comment on the first post in my profile$")
-//	public void i_enter_comment_profile() throws Throwable {
-//		System.out.println("@And -- I enter comment on my profile");
-//	}
+	@And("^I click on the like button for the first post on my profile$")
+	public void i_clcik_the_like_button_profile() throws Throwable {
+		profileWallActions.likeFirstPostOnProfile();
+	}
+	
+	@Then("^the like count goes up by one on my profile and on my wall$")
+	public void the_like_count_incremented() throws Throwable {
+		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
+		profileWallActions.firstPostLikeShowsOnWallAndProfile();
+	}
+	
+	@And("^I enter a comment on the first post in my profile$")
+	public void i_enter_comment_profile() throws Throwable {
+		System.out.println("@And -- I enter comment on my profile");
+		profileWallActions.postCommentProfile();
+	}
+	
+	@Then("^the comment appears as the last comment on the first post on my profile and on my wall$")
+	public void the_comment_appears() throws Throwable {
+		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
+		profileWallActions.newCommentShowsOnWallAndProfile();
+	}
 //	
 //	@And("^I delete the last comment on the first post on my profile$")
 //	public void i_delete_comment_profile() throws Throwable {
@@ -159,6 +173,52 @@ public class ProfileSteps {
 //	@And("^I like the first post in his feed$")
 //	public void i_like_first_post_on_his_feed() throws Throwable {
 //		System.out.println("@And -- I like post on his feed");
+//	}
+	
+//	@And("^I upload a post on my wall with just text$")
+//	public void i_upload_post_wall_just_text() throws Throwable {
+//		System.out.println("@And -- I upload a post on my wall with just text");
+//	}
+//	
+//	@And("^I upload a post with text and an image on my wall$")
+//	public void i_upload_post_wall_image_text() throws Throwable {
+//		System.out.println("@And -- I upload a post on my wall with image + text");
+//	}
+//	
+//	@And("^I upload a post with just an image on my wall$")
+//	public void i_upload_post_just_image() throws Throwable {
+//		System.out.println("@And -- I upload a post on my wall with just image");
+//	}
+//	
+//	@And("^I click on the like button for the first post on my wall$")
+//	public void i_click_like_button_wall() throws Throwable {
+//		System.out.println("@And -- I hit like button wall");
+//	}
+//	
+//	@And("^I enter a comment on the first post in my wall$")
+//	public void i_enter_comment_wall() throws Throwable {
+//		System.out.println("@And -- I enter comment wall");
+//	}
+//	
+//	@And("^I delete the last comment on the first post on my wall$")
+//	public void i_delete_comment_wall() throws Throwable {
+//		System.out.println("@And -- I delete comment wall");
+//	}
+//	
+//	@And("^I comment on the first post in his feed$")
+//	public void i_comment_post_wall() throws Throwable {
+//		System.out.println("@And -- I comment on the first post in his feed");
+//	}
+//	
+//	@And("^I like the first post in his feed$")
+//	public void i_like_post_wall() throws Throwable {
+//		System.out.println("@And -- I like the first post in his feed");
+//	}
+//	
+//	@Then("^the post I wrote on my wall is displayed as the first post on my profile and my wall$")
+//	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
+//		
+//		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
 //	}
 	
 }

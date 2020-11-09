@@ -32,11 +32,11 @@ public class HomeLocators {
 	public WebElement firstPostTaggedUser;
 	
 	// first post like button
-	@FindBy(how=How.ID ,using="/html/body/main/div/section/div[2]/div/div[2]/div[1]/div[3]/div[1]")
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1]")
 	public WebElement likeFirstPost;
 	
 	//first post like count
-	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1]")
+	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1])/text()")
 	public WebElement firstPostLikeCount;
 	
 	//first post edit/delete dropdown
@@ -53,11 +53,12 @@ public class HomeLocators {
 	
 	//comment locators
 	//comment on first post input
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[2]/div/div)[last()]/form/input")
+	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div/div/div[last()-1])/div[2]/div[2]")
 	public WebElement firstPostCommentInput;
 	
+	//this is wrong
 	//the last comment on the first post
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[2]/div/div)[last()-1]/div[2]/div[2]")
+	@FindBy(how=How.CSS ,using="#root > div > section > div.main-body-content > div > div:nth-child(2) > div.post-content-footer > div > div > div.post-comment-article.group:nth-last-child(2)  > div.post-comment-text > div.post-comment-body")						 
 	public WebElement firstPostLastComment;
 	
 	//author of the last comment made on the first post
@@ -67,7 +68,4 @@ public class HomeLocators {
 	//delete the last comment on the first post
 	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[2]/div/div)[last()-1]/div[3]")
 	public WebElement firstPostLastCommentDelete;
-	
-	
-
 }

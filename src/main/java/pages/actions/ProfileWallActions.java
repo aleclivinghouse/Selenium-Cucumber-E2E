@@ -1,12 +1,18 @@
 package pages.actions;
 
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 import java.util.GregorianCalendar;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.gargoylesoftware.htmlunit.javascript.host.Console;
 
@@ -45,7 +51,7 @@ public class ProfileWallActions {
 	ProfileLocators profileLocators = null;
 	NavLocators navLocators = null;
 	
-	
+//try using javascript executer
 	public ProfileWallActions(){
 		this.homeLocators = new HomeLocators();
 		this.navLocators = new NavLocators();
@@ -54,6 +60,8 @@ public class ProfileWallActions {
 		PageFactory.initElements(SeleniumDriver.getDriver(),profileLocators);
 		PageFactory.initElements(SeleniumDriver.getDriver(),navLocators);
 	}
+	
+	JavascriptExecutor js = (JavascriptExecutor)SeleniumDriver.getDriver();
 	
 	//I click on my name in the nav
 	public void clickOnNameInNav() {
@@ -188,69 +196,82 @@ public class ProfileWallActions {
 		Assert.assertTrue(flag);
 	}
 	
-	public void postCommentProfile() {
+	public void postCommentProfile() throws InterruptedException {
+		js.executeScript("window.scrollBy(0,450)", "");
 		String random = UUID.randomUUID().toString();
 		String randomShortened = random.substring(random.length() - 10);
 		commentProfile = randomShortened;
+		System.out.println("commentProfile in post: " + commentProfile);
 		profileLocators.firstPostCommentInput.clear();
 		profileLocators.firstPostCommentInput.sendKeys(randomShortened);
 		profileLocators.firstPostCommentInput.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
 	}
 	
 	public void newCommentShowsOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
-		Thread.sleep(1000);
+		js.executeScript("window.scrollBy(0,450)", "");
+//		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
+//          .until(ExpectedConditions.visibilityOf(profileLocators.firstPostLastComment));
 		boolean flag = true;
+		System.out.println("commentProfile in view: " + commentProfile);
 		String expectedText = commentProfile;
+		System.out.println("this is expected text in newCommentShows" + expectedText);
 		String profileActualText = profileLocators.firstPostLastComment.getText();
-		 if(profileActualText != expectedText) {
+		System.out.println("this is profile actual text in newCommentShows" + profileActualText);
+		 if(!profileActualText.equals(expectedText)) {
 			  flag = false;
+			  System.out.println("flag false fired");
 		  }
 		//now we have to actually
 		navLocators.navHome.click();
-		Thread.sleep(1000);
+		js.executeScript("window.scrollBy(0,450)", "");
+//		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
+//          .until(ExpectedConditions.visibilityOf(homeLocators.firstPostLastComment));
 		String wallActualText = homeLocators.firstPostLastComment.getText();
-	    if(wallActualText != expectedText) {
+		System.out.println("this is wall actual text in newCommentShows" + wallActualText);
+	    if(!wallActualText.equals(expectedText)) {
 			  flag = false;
 		  }
+	    Thread.sleep(2000);
 		Assert.assertTrue(flag);
 	}
 	
 	
-	public void LikeFirstPostOnProfile(){
-		String likeCount = profileLocators.firstPostInFeedLikeCount.getAttribute("innerHTML");
-		likeCount = likeCount.replaceAll("<i.*?/>", " ");
-		likeCount = likeCount.replaceAll("like", " ");
-		likeCount = likeCount.trim();
-		likeProfile = Integer.parseInt(likeCount);
-		System.out.println("this is like count text in likeFirstPostOnProfile");
-		profileLocators.firstPostInFeed.click();
+	public void likeFirstPostOnProfile(){
+//		js.executeScript("window.scrollBy(0,450)", "");
+//		profileLocators.firstPostInFeed.click();
 	}
-	
-	public void firstPostLikeShowsUp() throws InterruptedException {
-		navLocators.navProfile.click();
-		Thread.sleep(1000);
-		String likeCountProfile = profileLocators.firstPostInFeedLikeCount.getAttribute("innerHTML");
-		String likeCountWall = homeLocators.firstPostLikeCount.getAttribute("innerHTML");
+//	
+	public void firstPostLikeShowsOnWallAndProfile() throws InterruptedException {
+		js.executeScript("window.scrollBy(0,450)", "");
+//		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
+//          .until(ExpectedConditions.visibilityOf(profileLocators.firstPostInFeedLikeCount));
+//		navLocators.navProfile.click();
+		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
+          .until(ExpectedConditions.visibilityOf(homeLocators.firstPostLikeCount));
+		String likeCountProfile = profileLocators.firstPostInFeedLikeCount.getText();
+		System.out.println("this is like count profile in likeShows" + likeCountProfile);
+		String likeCountWall = homeLocators.firstPostLikeCount.getText();
+		System.out.println("this is like count wall in likeShows" + likeCountWall);
 		boolean flag = true;
-		likeCountProfile = likeCountProfile.replaceAll("<i.*?/>", " ");
-		likeCountProfile = likeCountProfile.replaceAll("like", " ");
-		likeCountProfile = likeCountProfile.trim();
 		int likeCountProfileNum = Integer.parseInt(likeCountProfile);
-		likeCountWall = likeCountWall.replaceAll("<i.*?/>", " ");
-		likeCountWall = likeCountWall.replaceAll("like", " ");
-		likeCountWall = likeCountWall.trim();
+		System.out.println("this is like count profile num in likeShows" + likeCountProfileNum);
 		int likeCountWallNum = Integer.parseInt(likeCountWall);
 		if(likeCountProfileNum != likeProfile + 1) {
 			flag = false;
 		}
 		navLocators.navHome.click();
+		js.executeScript("window.scrollBy(0,450)", "");
 		Thread.sleep(1000);
 		if(likeCountWallNum != likeProfile + 1) {
 			flag = false;
 		}
 		Assert.assertTrue(flag);
 	}
+	
+	
+	
 	
 	
 	//utils
