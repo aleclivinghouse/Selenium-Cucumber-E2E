@@ -239,32 +239,37 @@ public class ProfileWallActions {
 	
 	
 	public void likeFirstPostOnProfile(){
-//		js.executeScript("window.scrollBy(0,450)", "");
-//		profileLocators.firstPostInFeed.click();
+		likeProfile = 0;
+		js.executeScript("window.scrollBy(0,100)", "");
+		profileLocators.likeFirstPostInFeed.click();
+		likeProfile +=1;
 	}
 //	
 	public void firstPostLikeShowsOnWallAndProfile() throws InterruptedException {
-		js.executeScript("window.scrollBy(0,450)", "");
-//		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
-//          .until(ExpectedConditions.visibilityOf(profileLocators.firstPostInFeedLikeCount));
-//		navLocators.navProfile.click();
-		  new WebDriverWait(SeleniumDriver.getDriver(), 60)
-          .until(ExpectedConditions.visibilityOf(homeLocators.firstPostLikeCount));
+		navLocators.navProfile.click();
+		Thread.sleep(3000);
+		js.executeScript("window.scrollBy(0,100)", "");
 		String likeCountProfile = profileLocators.firstPostInFeedLikeCount.getText();
-		System.out.println("this is like count profile in likeShows" + likeCountProfile);
+		likeCountProfile = likeCountProfile.replaceAll("[^\\d.]", "");
+		likeCountProfile = likeCountProfile.trim();
+		System.out.println("this is like count profile in likeShows " + likeCountProfile);
+		
+		navLocators.navHome.click();
+		Thread.sleep(3000);
 		String likeCountWall = homeLocators.firstPostLikeCount.getText();
+		likeCountWall = likeCountWall.replaceAll("[^\\d.]", "");
+		likeCountWall = likeCountWall.trim();
 		System.out.println("this is like count wall in likeShows" + likeCountWall);
 		boolean flag = true;
 		int likeCountProfileNum = Integer.parseInt(likeCountProfile);
 		System.out.println("this is like count profile num in likeShows" + likeCountProfileNum);
 		int likeCountWallNum = Integer.parseInt(likeCountWall);
-		if(likeCountProfileNum != likeProfile + 1) {
+		if(likeCountProfileNum != likeProfile) {
 			flag = false;
 		}
-		navLocators.navHome.click();
-		js.executeScript("window.scrollBy(0,450)", "");
+
 		Thread.sleep(1000);
-		if(likeCountWallNum != likeProfile + 1) {
+		if(likeCountWallNum != likeProfile) {
 			flag = false;
 		}
 		Assert.assertTrue(flag);

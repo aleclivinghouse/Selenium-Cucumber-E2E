@@ -63,7 +63,7 @@ public class ProfileLocators {
 	public WebElement likeFirstPostInFeed;
 	
 	//like count of the first post in the feed
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[3]/div/div[2]/div[2]/div[1])/text()")
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[2]/div[1]")
 	public WebElement firstPostInFeedLikeCount;
 	
 	//edit/delete post dropdown

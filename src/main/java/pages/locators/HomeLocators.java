@@ -32,11 +32,11 @@ public class HomeLocators {
 	public WebElement firstPostTaggedUser;
 	
 	// first post like button
-	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1]")
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[1]/div[3]/div[1]")
 	public WebElement likeFirstPost;
 	
 	//first post like count
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1])/text()")
+	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[2]/div/div[2]/div[2]/div[1])")
 	public WebElement firstPostLikeCount;
 	
 	//first post edit/delete dropdown
