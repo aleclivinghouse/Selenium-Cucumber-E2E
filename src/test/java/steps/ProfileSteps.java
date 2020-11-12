@@ -158,7 +158,7 @@ public class ProfileSteps {
 	@And("^I delete the last comment on the first post on my profile$")
 	public void i_delete_comment_profile() throws Throwable {
 		System.out.println("@And -- I delete comment on my profile");
-		profileWallActions.deleteComment();
+		profileWallActions.deleteCommentProfile();
 	}
 //	
 //	@And("^I post on his feed$")
@@ -209,6 +209,7 @@ public class ProfileSteps {
 	@Then("^the last comment on the first post in my profile and on my wall disappears$")
 	public void comment_dissapears() throws Throwable {
 		System.out.println("@And -- I delete comment wall");
+		profileWallActions.commentIsDeletedOnWallAndProfile();
 	}
 //	
 //	@And("^I comment on the first post in his feed$")

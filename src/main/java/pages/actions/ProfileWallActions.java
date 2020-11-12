@@ -8,6 +8,7 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -62,6 +63,7 @@ public class ProfileWallActions {
 	}
 	
 	JavascriptExecutor js = (JavascriptExecutor)SeleniumDriver.getDriver();
+	Actions actions = new Actions(SeleniumDriver.getDriver());
 	
 	//I click on my name in the nav
 	public void clickOnNameInNav() {
@@ -275,41 +277,63 @@ public class ProfileWallActions {
 		Assert.assertTrue(flag);
 	}
 	
-	public void deleteComment(){
+	public void deleteCommentProfile(){
+		js.executeScript("window.scrollBy(0,200)", "");
 		profileLocators.deleteComment.click();
 	}
 	
 	public void commentIsDeletedOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
 		Thread.sleep(3000);
-		boolean flag = true;
+		js.executeScript("window.scrollBy(0,200)", "");
+		boolean flag = false;
 		boolean profileDisplayed = true;
 		boolean wallDisplayed = true;
-		String profileActualText = profileLocators.firstPostLastComment.getText();
-		if(profileLocators.firstPostLastComment.isDisplayed()) {
+		String profileActualText = null;
+		String wallActualText = null;
+		
+		if(Exists(profileLocators.firstPostLastComment)) {
 			profileDisplayed = false;
+			flag = true;
+		} else {
+			profileActualText = profileLocators.firstPostLastComment.getText();
 		}
 		
 		navLocators.navHome.click();
 		Thread.sleep(3000);
-		if(homeLocators.firstPostLastComment.isDisplayed()) {
+		js.executeScript("window.scrollBy(0,200)", "");
+		if(Exists(profileLocators.firstPostLastComment)) {
 			wallDisplayed = false;
+			flag = true;
+		} else {
+			wallActualText = homeLocators.firstPostLastComment.getText();
 		}
-		String wallActualText = homeLocators.firstPostLastComment.getText();
-		if(profileDisplayed == true ||
-		    wallDisplayed == true ||
-			wallActualText.equals(commentProfile) || 
-			profileActualText.equals(commentProfile)
-				) {
-			flag = false;
+		while(profileDisplayed == true && wallDisplayed == true) {
+			if(!wallActualText.equals(commentProfile) || profileActualText.equals(commentProfile)){
+				flag = true;
+			}
 		}
-		
+
 		Assert.assertTrue(flag);
 	}
+	
+	public void editCommentProfile() {
+		
+	}
+
+	
+	
 	
 	
 	
 	//utils
+	
+    public  boolean Exists(WebElement element){
+        if (element == null)
+        { return false; }
+        return true;
+    }
+    
 	public String randomDate(){
 		GregorianCalendar gc = new GregorianCalendar();
 	    String dateStr = "";

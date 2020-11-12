@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-12T21:09:27.447Z",
+        "start_timestamp": "2020-11-12T22:19:18.390Z",
         "before": [
           {
             "result": {
-              "duration": 14087726124,
+              "duration": 1866710150,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "I want to change my relationship status",
+        "line": 4,
+        "name": "I enter a post on my profile with just text:",
         "description": "",
-        "id": "profile;i-want-to-change-my-relationship-status",
+        "id": "test;i-enter-a-post-on-my-profile-with-just-text:",
         "after": [
           {
             "result": {
-              "duration": 170488795,
+              "duration": 105752113,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,166 @@
         "steps": [
           {
             "result": {
-              "duration": 5001300920,
+              "duration": 1313627609,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152733457,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92006808,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50492452,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027967518,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73932658,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027838664,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134440033,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I upload a post on my profile with just text",
+            "match": {
+              "location": "ProfileSteps.i_upload_a_post_just_text()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6151841142,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the post I wrote is displayed as the first post on my profile and my wall",
+            "match": {
+              "location": "ProfileSteps.the_post_is_displayed_as_the_first_profile_on_my_wall()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T22:19:30.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1410032741,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "I comment on the first post on my profile",
+        "description": "",
+        "id": "test;i-comment-on-the-first-post-on-my-profile",
+        "after": [
+          {
+            "result": {
+              "duration": 105141672,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3292318754,
               "status": "passed"
             },
             "line": 16,
@@ -53,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 248684539,
+              "duration": 154510870,
               "status": "passed"
             },
             "line": 17,
@@ -71,7 +230,7 @@
           },
           {
             "result": {
-              "duration": 134182754,
+              "duration": 87310663,
               "status": "passed"
             },
             "line": 18,
@@ -89,7 +248,7 @@
           },
           {
             "result": {
-              "duration": 68125032,
+              "duration": 45224025,
               "status": "passed"
             },
             "line": 19,
@@ -101,7 +260,7 @@
           },
           {
             "result": {
-              "duration": 1041712880,
+              "duration": 1030047914,
               "status": "passed"
             },
             "line": 20,
@@ -113,7 +272,7 @@
           },
           {
             "result": {
-              "duration": 98535521,
+              "duration": 55174234,
               "status": "passed"
             },
             "line": 21,
@@ -125,7 +284,7 @@
           },
           {
             "result": {
-              "duration": 1035240612,
+              "duration": 1028571360,
               "status": "passed"
             },
             "line": 22,
@@ -137,36 +296,36 @@
           },
           {
             "result": {
-              "duration": 182100423,
+              "duration": 2137856314,
               "status": "passed"
             },
             "line": 23,
-            "name": "I change my relationship status",
+            "name": "I enter a comment on the first post in my profile",
             "match": {
-              "location": "ProfileSteps.i_change_my_relationship_status()"
+              "location": "ProfileSteps.i_enter_comment_profile()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1056579395,
+              "duration": 3834818065,
               "status": "passed"
             },
             "line": 24,
-            "name": "my relationship status should appear on the screen",
+            "name": "the comment appears as the last comment on the first post on my profile and on my wall",
             "match": {
-              "location": "ProfileSteps.my_relationship_status_appears_on_screen()"
+              "location": "ProfileSteps.the_comment_appears()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-12T21:09:50.605Z",
+        "start_timestamp": "2020-11-12T22:19:43.602Z",
         "before": [
           {
             "result": {
-              "duration": 11473741966,
+              "duration": 1369133843,
               "status": "passed"
             },
             "match": {
@@ -175,13 +334,13 @@
           }
         ],
         "line": 26,
-        "name": "I want to change my school",
+        "name": "I delete the last comment on the first post on my profile",
         "description": "",
-        "id": "profile;i-want-to-change-my-school",
+        "id": "test;i-delete-the-last-comment-on-the-first-post-on-my-profile",
         "after": [
           {
             "result": {
-              "duration": 169307536,
+              "duration": 119328613,
               "status": "passed"
             },
             "match": {
@@ -194,7 +353,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1303972678,
+              "duration": 1591432949,
               "status": "passed"
             },
             "line": 27,
@@ -212,7 +371,7 @@
           },
           {
             "result": {
-              "duration": 187325305,
+              "duration": 152012198,
               "status": "passed"
             },
             "line": 28,
@@ -230,7 +389,7 @@
           },
           {
             "result": {
-              "duration": 101910507,
+              "duration": 96576193,
               "status": "passed"
             },
             "line": 29,
@@ -248,7 +407,7 @@
           },
           {
             "result": {
-              "duration": 65872644,
+              "duration": 46585033,
               "status": "passed"
             },
             "line": 30,
@@ -260,7 +419,7 @@
           },
           {
             "result": {
-              "duration": 1029433184,
+              "duration": 1029038631,
               "status": "passed"
             },
             "line": 31,
@@ -272,7 +431,7 @@
           },
           {
             "result": {
-              "duration": 75630337,
+              "duration": 54710971,
               "status": "passed"
             },
             "line": 32,
@@ -284,7 +443,7 @@
           },
           {
             "result": {
-              "duration": 1025453063,
+              "duration": 1027103409,
               "status": "passed"
             },
             "line": 33,
@@ -296,964 +455,10 @@
           },
           {
             "result": {
-              "duration": 141914707,
+              "duration": 46674279,
               "status": "passed"
             },
             "line": 34,
-            "name": "I change my school",
-            "match": {
-              "location": "ProfileSteps.i_change_my_school()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1024649197,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "my school should appear on the screen",
-            "match": {
-              "location": "ProfileSteps.my_school_appears_on_screen()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:10:07.215Z",
-        "before": [
-          {
-            "result": {
-              "duration": 14438866027,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "I want to change my work",
-        "description": "",
-        "id": "profile;i-want-to-change-my-work",
-        "after": [
-          {
-            "result": {
-              "duration": 101969722,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1286187666,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 168620129,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 113169171,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53132383,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1028761090,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77193427,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1028577708,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 224310620,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "I change my work",
-            "match": {
-              "location": "ProfileSteps.i_change_my_work()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1017922159,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "my work should appear on the screen",
-            "match": {
-              "location": "ProfileSteps.my_work_appears_on_screen()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:10:26.761Z",
-        "before": [
-          {
-            "result": {
-              "duration": 11264566975,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 48,
-        "name": "I want to change my city",
-        "description": "",
-        "id": "profile;i-want-to-change-my-city",
-        "after": [
-          {
-            "result": {
-              "duration": 162035568,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1513038211,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 275586802,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 145034207,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 67402376,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1033379344,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 76430200,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1027540272,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 589350416,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I change my city",
-            "match": {
-              "location": "ProfileSteps.i_change_my_city()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1020849750,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "my city should appear on the screen",
-            "match": {
-              "location": "ProfileSteps.my_city_appears_on_screen()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:10:43.943Z",
-        "before": [
-          {
-            "result": {
-              "duration": 11157670972,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 59,
-        "name": "I enter a post on my profile with just text:",
-        "description": "",
-        "id": "profile;i-enter-a-post-on-my-profile-with-just-text:",
-        "after": [
-          {
-            "result": {
-              "duration": 89305520,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1244847058,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 147000041,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 96436552,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50177607,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1028335921,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 59381693,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1024411206,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 138195752,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "I upload a post on my profile with just text",
-            "match": {
-              "location": "ProfileSteps.i_upload_a_post_just_text()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8760699611,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "the post I wrote is displayed as the first post on my profile and my wall",
-            "match": {
-              "location": "ProfileSteps.the_post_is_displayed_as_the_first_profile_on_my_wall()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:11:07.745Z",
-        "before": [
-          {
-            "result": {
-              "duration": 10891277527,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 70,
-        "name": "I comment on the first post on my profile",
-        "description": "",
-        "id": "profile;i-comment-on-the-first-post-on-my-profile",
-        "after": [
-          {
-            "result": {
-              "duration": 152630395,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1285497336,
-              "status": "passed"
-            },
-            "line": 71,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 159930845,
-              "status": "passed"
-            },
-            "line": 72,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 88079464,
-              "status": "passed"
-            },
-            "line": 73,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 46210502,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1033798970,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 71826467,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1030455313,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2129102683,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "I enter a comment on the first post in my profile",
-            "match": {
-              "location": "ProfileSteps.i_enter_comment_profile()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3793274603,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "the comment appears as the last comment on the first post on my profile and on my wall",
-            "match": {
-              "location": "ProfileSteps.the_comment_appears()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:11:28.434Z",
-        "before": [
-          {
-            "result": {
-              "duration": 11145304788,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 81,
-        "name": "I like the first post on my profile",
-        "description": "",
-        "id": "profile;i-like-the-first-post-on-my-profile",
-        "after": [
-          {
-            "result": {
-              "duration": 157482287,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1333624559,
-              "status": "passed"
-            },
-            "line": 82,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 146161768,
-              "status": "passed"
-            },
-            "line": 83,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 87375522,
-              "status": "passed"
-            },
-            "line": 84,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45982349,
-              "status": "passed"
-            },
-            "line": 85,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1028786532,
-              "status": "passed"
-            },
-            "line": 86,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 65464983,
-              "status": "passed"
-            },
-            "line": 87,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1027348398,
-              "status": "passed"
-            },
-            "line": 88,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41625444,
-              "status": "passed"
-            },
-            "line": 89,
-            "name": "I click on the like button for the first post on my profile",
-            "match": {
-              "location": "ProfileSteps.i_clcik_the_like_button_profile()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7163059097,
-              "status": "passed"
-            },
-            "line": 90,
-            "name": "the like count goes up by one on my profile and on my wall",
-            "match": {
-              "location": "ProfileSteps.the_like_count_incremented()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:11:50.683Z",
-        "before": [
-          {
-            "result": {
-              "duration": 10830199659,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeActions.setup()"
-            }
-          }
-        ],
-        "line": 92,
-        "name": "I delete the last comment on the first post on my profile",
-        "description": "",
-        "id": "profile;i-delete-the-last-comment-on-the-first-post-on-my-profile",
-        "after": [
-          {
-            "result": {
-              "duration": 144219559,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AfterActions.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1262572766,
-              "status": "passed"
-            },
-            "line": 93,
-            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://spbk.herokuapp.com/#/login",
-                  "offset": 26
-                }
-              ],
-              "location": "SharedSteps.user_navigates_to_landing_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 150637557,
-              "status": "passed"
-            },
-            "line": 94,
-            "name": "I fill in email with \"testuser1@livinghouse.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testuser1@livinghouse.com",
-                  "offset": 22
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_email(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 85771384,
-              "status": "passed"
-            },
-            "line": 95,
-            "name": "I fill in password with \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 25
-                }
-              ],
-              "location": "SharedSteps.user_uses_correct_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49044289,
-              "status": "passed"
-            },
-            "line": 96,
-            "name": "I press Sign in",
-            "match": {
-              "location": "SharedSteps.i_press_Sign_in()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1028049760,
-              "status": "passed"
-            },
-            "line": 97,
-            "name": "I am redirected to my home page",
-            "match": {
-              "location": "SharedSteps.redirected_to_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54474343,
-              "status": "passed"
-            },
-            "line": 98,
-            "name": "I click on my name in the nav",
-            "match": {
-              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1026815794,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "I am redirected to my profile page",
-            "match": {
-              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35702214,
-              "status": "passed"
-            },
-            "line": 100,
             "name": "I delete the last comment on the first post on my profile",
             "match": {
               "location": "ProfileSteps.i_delete_comment_profile()"
@@ -1262,10 +467,10 @@
           },
           {
             "result": {
-              "duration": 192012,
+              "duration": 6137798859,
               "status": "passed"
             },
-            "line": 101,
+            "line": 35,
             "name": "the last comment on the first post in my profile and on my wall disappears",
             "match": {
               "location": "ProfileSteps.comment_dissapears()"
@@ -1275,11 +480,11 @@
         ]
       }
     ],
-    "name": "Profile",
-    "description": "\tI want to see if the users profile page functions correctly",
-    "id": "profile",
+    "name": "Test",
+    "description": "\tIndividual test for dev purposes",
+    "id": "test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/FeatureFiles/Profile.feature",
+    "uri": "file:src/test/resources/FeatureFiles/Test.feature",
     "tags": []
   }
 ]
