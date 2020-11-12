@@ -83,9 +83,9 @@ public class ProfileLocators {
 	@FindBy(how=How.CSS ,using="#root > div > section > div.profile-body-content > div > div:nth-child(2) > div.post-content-footer > div > div > div.post-comment-article.group:nth-last-child(2) > div.post-comment-text > div.post-comment-body")
 	public WebElement firstPostLastComment;
 	
-	//delete the last comment made on the first post in the feed
-	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[3]/div/div[2]/div[2]/div/div/div)[last()-1]/div[3]")
-	public WebElement firstPostLastCommentDelete;
+	//delete the first comment made on the first post in the feed
+	@FindBy(how=How.CSS ,using="#root > div > section > div.profile-body-content > div > div:nth-child(2) > div.post-content-footer > div.post-content-comments > div > div.post-comment-article.group:nth-last-child(2) > div.comment-delete ")
+	public WebElement deleteComment;
 	
 	//The input field to write a comment on the first post in the feed
 	@FindBy(how=How.XPATH ,using="(/html/body/main/div/section/div[3]/div/div[2]/div[2]/div/div/div)[last()]/form/input")

@@ -711,4 +711,105 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "I delete the last comment on the first post on my profile",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SharedSteps.user_navigates_to_landing_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill in email with \"testuser1@livinghouse.com\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SharedSteps.user_uses_correct_email(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill in password with \"password\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SharedSteps.user_uses_correct_password(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I press Sign in",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SharedSteps.i_press_Sign_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am redirected to my home page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SharedSteps.redirected_to_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on my name in the nav",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am redirected to my profile page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I delete the last comment on the first post on my profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ProfileSteps.i_delete_comment_profile()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the last comment on the first post in my profile and on my wall disappears",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ProfileSteps.comment_dissapears()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

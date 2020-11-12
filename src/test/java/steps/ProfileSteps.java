@@ -154,11 +154,12 @@ public class ProfileSteps {
 		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
 		profileWallActions.newCommentShowsOnWallAndProfile();
 	}
-//	
-//	@And("^I delete the last comment on the first post on my profile$")
-//	public void i_delete_comment_profile() throws Throwable {
-//		System.out.println("@And -- I delete comment on my profile");
-//	}
+
+	@And("^I delete the last comment on the first post on my profile$")
+	public void i_delete_comment_profile() throws Throwable {
+		System.out.println("@And -- I delete comment on my profile");
+		profileWallActions.deleteComment();
+	}
 //	
 //	@And("^I post on his feed$")
 //	public void i_post_on_his_feed() throws Throwable {
@@ -204,6 +205,11 @@ public class ProfileSteps {
 //	public void i_delete_comment_wall() throws Throwable {
 //		System.out.println("@And -- I delete comment wall");
 //	}
+	
+	@Then("^the last comment on the first post in my profile and on my wall disappears$")
+	public void comment_dissapears() throws Throwable {
+		System.out.println("@And -- I delete comment wall");
+	}
 //	
 //	@And("^I comment on the first post in his feed$")
 //	public void i_comment_post_wall() throws Throwable {

@@ -275,7 +275,37 @@ public class ProfileWallActions {
 		Assert.assertTrue(flag);
 	}
 	
+	public void deleteComment(){
+		profileLocators.deleteComment.click();
+	}
 	
+	public void commentIsDeletedOnWallAndProfile() throws InterruptedException {
+		navLocators.navProfile.click();
+		Thread.sleep(3000);
+		boolean flag = true;
+		boolean profileDisplayed = true;
+		boolean wallDisplayed = true;
+		String profileActualText = profileLocators.firstPostLastComment.getText();
+		if(profileLocators.firstPostLastComment.isDisplayed()) {
+			profileDisplayed = false;
+		}
+		
+		navLocators.navHome.click();
+		Thread.sleep(3000);
+		if(homeLocators.firstPostLastComment.isDisplayed()) {
+			wallDisplayed = false;
+		}
+		String wallActualText = homeLocators.firstPostLastComment.getText();
+		if(profileDisplayed == true ||
+		    wallDisplayed == true ||
+			wallActualText.equals(commentProfile) || 
+			profileActualText.equals(commentProfile)
+				) {
+			flag = false;
+		}
+		
+		Assert.assertTrue(flag);
+	}
 	
 	
 	
