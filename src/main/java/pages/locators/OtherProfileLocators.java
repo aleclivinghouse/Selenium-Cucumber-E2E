@@ -9,7 +9,7 @@ public class OtherProfileLocators {
 	public WebElement addFriend;
 	
 	//Name
-	@FindBy(how=How.ID ,using="profile-cover-name")
+	@FindBy(how=How.CSS ,using="#root > div > section > div.profile-topper > div.profile-cover-photo > div.profile-cover-info > div")
 	public WebElement profileName;
 	
 	//post locators

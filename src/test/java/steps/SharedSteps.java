@@ -114,6 +114,11 @@ public class SharedSteps {
 		registerActions.PressSignUp();
 	}
 	
+	@When("I log out")
+	public void i_log_out() {
+	    // Write code here that turns the phrase above into concrete actions
+	    profileWallActions.LogOut();
+	}	
 	
 	
 //	@Then("^the post does not display on my profile or my wall$")
@@ -141,17 +146,11 @@ public class SharedSteps {
 //	
 
 //	
-//	@And("^I search \"([^\"]*)\" and select the first result$")
-//	public void search_user(String name) throws Throwable {
-//	}
-//	
-//	@And("^I log in as \"([^\"*])\"$")
-//	public void log_in_as(String name) throws Throwable {
-//		System.out.println("@And -- I log in as test user 1");
-//	}
-//	
-//	@And("^And I log out$")
-//	public void log_out(String name) throws Throwable {
-//		System.out.println("@And -- I log out");
-//	}
+
+	
+	@And("^And I log out$")
+	public void log_out(String name) throws Throwable {
+		System.out.println("@And -- I log out");
+		profileWallActions.LogOut();
+	}
 }

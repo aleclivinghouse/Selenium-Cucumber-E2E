@@ -23,4 +23,18 @@ public class NavLocators {
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/header/div/div[2]/ul[2]/li/div[2]/ul[1]")
 	public WebElement navFriendsReject;
 
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > input[type=text]")
+	public WebElement navSearch;
+	
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div")
+	public WebElement navSearchResults;
+	
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div > ul > li > a")
+	public WebElement navSearchFirst;
+	
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div > ul > li > a > div")
+	public WebElement navSearchFirstName;
+	
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.navigation-component > ul.privacy-icons")
+	public WebElement logOut;
 }

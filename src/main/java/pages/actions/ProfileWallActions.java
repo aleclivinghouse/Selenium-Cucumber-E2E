@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,6 +24,7 @@ import pages.locators.ProfileLocators;
 import pages.locators.HomeLocators;
 import pages.locators.LoginRegisterLocators;
 import pages.locators.NavLocators;
+import pages.locators.OtherProfileLocators;
 import utils.SeleniumDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -47,9 +49,11 @@ public class ProfileWallActions {
 	String otherUserLikeWall = null;
 	String otherUserLikeProfile = null;
 	String otherUserCommentWall = null;
+	String searchName = null;
 	
 	HomeLocators homeLocators = null;
 	ProfileLocators profileLocators = null;
+	OtherProfileLocators otherProfileLocators = null;
 	NavLocators navLocators = null;
 	
 //try using javascript executer
@@ -57,8 +61,10 @@ public class ProfileWallActions {
 		this.homeLocators = new HomeLocators();
 		this.navLocators = new NavLocators();
 		this.profileLocators = new ProfileLocators();
+		this.otherProfileLocators = new OtherProfileLocators();
 		PageFactory.initElements(SeleniumDriver.getDriver(),homeLocators);
 		PageFactory.initElements(SeleniumDriver.getDriver(),profileLocators);
+		PageFactory.initElements(SeleniumDriver.getDriver(),otherProfileLocators);
 		PageFactory.initElements(SeleniumDriver.getDriver(),navLocators);
 	}
 	
@@ -127,6 +133,44 @@ public class ProfileWallActions {
 		String actualText = profileLocators.changeSchool.getAttribute("value");
 		String expectedText = newSchool;
 		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	public void searchUser(String searchInput) throws InterruptedException {
+		navLocators.navSearch.clear();
+		navLocators.navSearch.sendKeys(searchInput);
+		actions.moveToElement(navLocators.navSearchResults).build().perform();
+		Thread.sleep(3000);
+		searchName = navLocators.navSearchFirstName.getText();
+		System.out.println("this is the search name in searchUser" + searchName);
+		js.executeScript("arguments[0].click()", navLocators.navSearchFirst);
+	}
+	
+	public void onSearchedUsersProfile() throws InterruptedException {
+		Thread.sleep(3000);
+		boolean flag = true;
+		System.out.println("this is the actual profile name in onSearchedUsersProfile" + otherProfileLocators.profileName.getText());
+		System.out.println("this is the expected profile name in onSearchedUsersProfile" + searchName);
+		searchName = searchName.toLowerCase();
+		String actualName = otherProfileLocators.profileName.getText().toLowerCase();
+		if(!searchName.equals(actualName)){
+			flag = false;
+		}
+		Assert.assertTrue(flag);
+	}
+	
+	public void postOnHisFeed() throws InterruptedException {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostProfile = randomShortened;
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		profileLocators.postTextArea.clear();
+		profileLocators.postTextArea.sendKeys(randomShortened);
+		profileLocators.postSubmit.click();
+	}
+	
+	
+	public void LogOut() {
+		navLocators.logOut.click();
 	}
 	
 	public void changeWork(){
@@ -318,10 +362,19 @@ public class ProfileWallActions {
 	}
 	
 	public void editCommentProfile() {
-		
+		Select dropdown = new Select(profileLocators.editDeletePostDropdown);
+		dropdown.selectByVisibleText("Edit");
 	}
-
 	
+	public void postFromRandomUserAppears(){
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostProfile = randomShortened;
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		profileLocators.postTextArea.clear();
+		profileLocators.postTextArea.sendKeys(randomShortened);
+		profileLocators.postSubmit.click();
+	}
 	
 	
 	

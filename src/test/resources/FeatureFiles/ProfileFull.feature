@@ -169,7 +169,7 @@ Feature: Profile
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    And I redirected to my home page
-	    And I search "testuser 1" and select the first result
+	    And I search "testuser1" and select the first result
 	    And I post on his feed
 	    And I log out
 	    And I log in as "test user 1" for my profile
@@ -190,10 +190,10 @@ Feature: Profile
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    And I redirected to my home page
-	    And I search "testuser 1" and select the first result
+	    And I search "testuser1" and select the first result
 	    And I comment on the first post in his feed
 	    And I log out
-	    And I log in as "test user 1" for my profile comments
+	    And I log in as "tes tuser 1" for my profile comments
 	    And I click on my name in the nav
 	    And I am redirected to my profile page
 	    Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall
@@ -210,7 +210,7 @@ Feature: Profile
 	    And I fill in one of the gender buttons
 	    And I press Sign up
 	    And I redirected to my home page
-	    And I search "testuser 1" and select the first result
+	    And I search "testuser1" and select the first result
 	    And I like the first post in his feed
 	    And I log out
 	    And I log in as "test user 1" for my profile likes

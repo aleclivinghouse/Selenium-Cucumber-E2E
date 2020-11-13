@@ -107,7 +107,16 @@ public class ProfileSteps {
 //	public void i_am_redirected_to_my_profile_page() throws Throwable {
 //		System.out.println("@And -- I am redirected to my profile page");
 //	}
-//	
+
+	@And("^I search \"([^\"]*)\" and select the first result$")
+	public void search_user(String searchInput) throws Throwable {
+		profileWallActions.searchUser(searchInput);
+	}
+	
+	@And("^I am redirected to his page$")
+	public void redirected_to_his_page() throws InterruptedException{
+		profileWallActions.onSearchedUsersProfile();
+	}
 	
 	@And("^I upload a post on my profile with just text$")
 	public void i_upload_a_post_just_text() throws Throwable {
@@ -161,10 +170,16 @@ public class ProfileSteps {
 		profileWallActions.deleteCommentProfile();
 	}
 //	
-//	@And("^I post on his feed$")
-//	public void i_post_on_his_feed() throws Throwable {
-//		System.out.println("@And -- I post on his feed");
-//	}
+	@And("^I post on his feed$")
+	public void i_post_on_his_feed() throws Throwable {
+		System.out.println("@And -- I post on his feed");
+		profileWallActions.postOnHisFeed();
+	}
+	
+	@Then("the post from the random user shows up as the first post on my profile$")
+	public void the_post_appears_from_the_random_user() throws Throwable {
+		profileWallActions.postFromRandomUserAppears();
+	}
 //	
 //	@And("^I comment on the first post in his feed$")
 //	public void i_comment_first_post_on_his_feed() throws Throwable {
