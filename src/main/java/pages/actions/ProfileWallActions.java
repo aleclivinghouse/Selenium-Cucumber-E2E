@@ -140,7 +140,7 @@ public class ProfileWallActions {
 		navLocators.navSearch.sendKeys(searchInput);
 		actions.moveToElement(navLocators.navSearchResults).build().perform();
 		Thread.sleep(3000);
-		searchName = navLocators.navSearchFirstName.getText();
+		searchName = navLocators.navSearchFirst.getText();
 		System.out.println("this is the search name in searchUser" + searchName);
 		js.executeScript("arguments[0].click()", navLocators.navSearchFirst);
 	}
@@ -162,6 +162,16 @@ public class ProfileWallActions {
 		String random = UUID.randomUUID().toString();
 		String randomShortened = random.substring(random.length() - 10);
 		textPostProfile = randomShortened;
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		profileLocators.postTextArea.clear();
+		profileLocators.postTextArea.sendKeys(randomShortened);
+		profileLocators.postSubmit.click();
+	}
+	
+	public void commentOnHisFeed() throws InterruptedException {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		commentProfile = randomShortened;
 		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
 		profileLocators.postTextArea.clear();
 		profileLocators.postTextArea.sendKeys(randomShortened);
@@ -218,6 +228,17 @@ public class ProfileWallActions {
 		profileLocators.postSubmit.click();
 	}
 	
+	public void postJustTextWall() {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostWall = randomShortened;
+		textPostProfile = randomShortened;
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		homeLocators.postInput.clear();
+		homeLocators.postInput.sendKeys(randomShortened);
+		homeLocators.postSubmit.click();
+	}
+	
 	public void newPostShowsOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
 		Thread.sleep(3000);
@@ -251,6 +272,20 @@ public class ProfileWallActions {
 		profileLocators.firstPostCommentInput.clear();
 		profileLocators.firstPostCommentInput.sendKeys(randomShortened);
 		profileLocators.firstPostCommentInput.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+	}
+	
+	
+	public void postCommentWall() throws InterruptedException {
+		js.executeScript("window.scrollBy(0,450)", "");
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		commentWall = randomShortened;
+		commentProfile = randomShortened;
+		System.out.println("commentProfile in post: " + commentProfile);
+		homeLocators.firstPostCommentInput.clear();
+		homeLocators.firstPostCommentInput.sendKeys(randomShortened);
+		homeLocators.firstPostCommentInput.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 	}
 	
@@ -288,6 +323,15 @@ public class ProfileWallActions {
 		likeProfile = 0;
 		js.executeScript("window.scrollBy(0,100)", "");
 		profileLocators.likeFirstPostInFeed.click();
+		likeProfile +=1;
+	}
+	
+	public void likeFirstPostOnWall(){
+		likeWall = 0;
+		likeProfile = 0;
+		js.executeScript("window.scrollBy(0,100)", "");
+		homeLocators.likeFirstPost.click();
+		likeWall +=1;
 		likeProfile +=1;
 	}
 //	
@@ -366,18 +410,8 @@ public class ProfileWallActions {
 		dropdown.selectByVisibleText("Edit");
 	}
 	
-	public void postFromRandomUserAppears(){
-		String random = UUID.randomUUID().toString();
-		String randomShortened = random.substring(random.length() - 10);
-		textPostProfile = randomShortened;
-		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
-		profileLocators.postTextArea.clear();
-		profileLocators.postTextArea.sendKeys(randomShortened);
-		profileLocators.postSubmit.click();
-	}
 	
-	
-	
+
 	
 	//utils
 	

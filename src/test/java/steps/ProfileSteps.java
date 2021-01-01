@@ -105,81 +105,7 @@ public class ProfileSteps {
 //	
 //	@And("^I am redirected to my profile page$")
 //	public void i_am_redirected_to_my_profile_page() throws Throwable {
-//		System.out.println("@And -- I am redirected to my profile page");
-//	}
-
-	@And("^I search \"([^\"]*)\" and select the first result$")
-	public void search_user(String searchInput) throws Throwable {
-		profileWallActions.searchUser(searchInput);
-	}
-	
-	@And("^I am redirected to his page$")
-	public void redirected_to_his_page() throws InterruptedException{
-		profileWallActions.onSearchedUsersProfile();
-	}
-	
-	@And("^I upload a post on my profile with just text$")
-	public void i_upload_a_post_just_text() throws Throwable {
-		System.out.println("@And -- I upload a post on my profile with just text");
-		profileWallActions.postJustTextProfile();
-		
-	}
-	
-	@Then("^the post I wrote is displayed as the first post on my profile and my wall$")
-	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
-		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
-		profileWallActions.newPostShowsOnWallAndProfile();
-	}
-	
-//	@And("^I upload a post with text and an image on my profile$")
-//	public void i_upload_a_post_text_image() throws Throwable {
-//		System.out.println("@And -- I upload a post on my profile with text image");
-//	}
-//	
-//	@And("^I upload a post with just an image on my profile$")
-//	public void i_upload_a_post_just_image() throws Throwable {
-//		System.out.println("@And -- I upload a post on my profile with just an image");
-//	}
-//	
-	@And("^I click on the like button for the first post on my profile$")
-	public void i_clcik_the_like_button_profile() throws Throwable {
-		profileWallActions.likeFirstPostOnProfile();
-	}
-	
-	@Then("^the like count goes up by one on my profile and on my wall$")
-	public void the_like_count_incremented() throws Throwable {
-		System.out.println("@Then -- the like count on the first post on my profile and on my wall gets incremented by one");
-		profileWallActions.firstPostLikeShowsOnWallAndProfile();
-	}
-	
-	@And("^I enter a comment on the first post in my profile$")
-	public void i_enter_comment_profile() throws Throwable {
-		System.out.println("@And -- I enter comment on my profile");
-		profileWallActions.postCommentProfile();
-	}
-	
-	@Then("^the comment appears as the last comment on the first post on my profile and on my wall$")
-	public void the_comment_appears() throws Throwable {
-		System.out.println("@Then -- the comment appears as the last comment on the first post on my profile and on my wall");
-		profileWallActions.newCommentShowsOnWallAndProfile();
-	}
-
-	@And("^I delete the last comment on the first post on my profile$")
-	public void i_delete_comment_profile() throws Throwable {
-		System.out.println("@And -- I delete comment on my profile");
-		profileWallActions.deleteCommentProfile();
-	}
-//	
-	@And("^I post on his feed$")
-	public void i_post_on_his_feed() throws Throwable {
-		System.out.println("@And -- I post on his feed");
-		profileWallActions.postOnHisFeed();
-	}
-	
-	@Then("the post from the random user shows up as the first post on my profile$")
-	public void the_post_appears_from_the_random_user() throws Throwable {
-		profileWallActions.postFromRandomUserAppears();
-	}
+//	z
 //	
 //	@And("^I comment on the first post in his feed$")
 //	public void i_comment_first_post_on_his_feed() throws Throwable {
@@ -227,10 +153,6 @@ public class ProfileSteps {
 		profileWallActions.commentIsDeletedOnWallAndProfile();
 	}
 //	
-//	@And("^I comment on the first post in his feed$")
-//	public void i_comment_post_wall() throws Throwable {
-//		System.out.println("@And -- I comment on the first post in his feed");
-//	}
 //	
 //	@And("^I like the first post in his feed$")
 //	public void i_like_post_wall() throws Throwable {

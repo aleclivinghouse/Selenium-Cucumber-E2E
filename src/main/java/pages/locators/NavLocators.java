@@ -29,10 +29,10 @@ public class NavLocators {
 	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div")
 	public WebElement navSearchResults;
 	
-	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div > ul > li > a")
+	@FindBy(how=How.LINK_TEXT ,using="testuser 1")
 	public WebElement navSearchFirst;
 	
-	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div > ul > li > a > div")
+	@FindBy(how=How.CSS ,using="#root > div > header > div > div.searchbar-component > form > div > ul > li:nth-child(2) > a > div")
 	public WebElement navSearchFirstName;
 	
 	@FindBy(how=How.CSS ,using="#root > div > header > div > div.navigation-component > ul.privacy-icons")
