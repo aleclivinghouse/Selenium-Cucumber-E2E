@@ -2,6 +2,7 @@ package steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import pages.actions.LoginActions;
 import pages.actions.RegisterActions;
 import utils.SeleniumDriver;
@@ -117,15 +118,32 @@ public class ProfileSteps {
 //		System.out.println("@And -- I like post on his feed");
 //	}
 	
-//	@And("^I upload a post on my wall with just text$")
-//	public void i_upload_post_wall_just_text() throws Throwable {
-//		System.out.println("@And -- I upload a post on my wall with just text");
-//	}
 //	
-//	@And("^I upload a post with text and an image on my wall$")
-//	public void i_upload_post_wall_image_text() throws Throwable {
-//		System.out.println("@And -- I upload a post on my wall with image + text");
-//	}
+	@And("^I upload a post with text and an image on my wall$")
+	public void i_upload_post_wall_image_text() throws Throwable {
+		profileWallActions.postTexImageWall();
+	}
+	
+	@And("^I upload a post with text and an image on my profile")
+	public void i_upload_post_profile_image_text() throws Throwable {
+		profileWallActions.postTextImageProfile();
+	}
+	
+	@Then("the post is displayed as the first post on my profile and the text and the image are both included")
+	public void the_post_is_displayed_as_the_first_post_on_my_profile_and_the_text_and_the_image_are_both_included() throws Throwable {
+	   profileWallActions.postTextImageProfileShowsUp();
+	}
+	
+	@When("I upload a post with just an image on my profile")
+	public void i_upload_a_post_with_just_an_image_on_my_profile() throws Throwable {
+	   profileWallActions.postJustImageProfile();
+	}
+
+	@Then("the post does not display on my profile or my wall")
+	public void the_post_does_not_display_on_my_profile_or_my_wall() throws Throwable {
+		 profileWallActions.postJustImageProfileShowsUp();
+	}
+
 //	
 //	@And("^I upload a post with just an image on my wall$")
 //	public void i_upload_post_just_image() throws Throwable {

@@ -43,6 +43,12 @@ public class ProfileLocators {
 	@FindBy(how=How.ID ,using="post-pic-input")
 	public WebElement postPic;
 	
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[1]/div[2]/img")
+	public WebElement postPicRead;
+	
+	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[1]/div[2]/div/div[1]")
+	public WebElement postTextWithPic;
+	
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[3]/div/div[2]/div[1]/div[1]/div[2]/a")
 	public WebElement firstPostAuthor;
 	

@@ -239,6 +239,83 @@ public class ProfileWallActions {
 		homeLocators.postSubmit.click();
 	}
 	
+	public void postTextImageProfile() {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostProfile = randomShortened;
+		String fileName = System.getProperty("user.dir") + "/ImagesForUpload/1.jpg";
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		profileLocators.postTextArea.clear();
+		profileLocators.postPic.sendKeys(fileName);
+		profileLocators.postTextArea.sendKeys(randomShortened);
+		profileLocators.postSubmit.click();
+	}
+	
+	public void postJustImageProfile() {
+		String fileName = System.getProperty("user.dir") + "/ImagesForUpload/1.jpg";
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		profileLocators.postTextArea.clear();
+		profileLocators.postPic.sendKeys(fileName);
+		profileLocators.postSubmit.click();
+	}
+	
+	public void postTextImageProfileShowsUp()  throws InterruptedException {
+		Thread.sleep(3000);
+		boolean flag = true;
+		try {
+			WebElement element = profileLocators.postPicRead;
+			System.out.println("the post image was found");
+		} catch(NoSuchElementException e) {
+			flag = false;
+			System.out.println("the post image was not found");
+		}
+		String expectedText = textPostProfile;
+		System.out.println("this is the expected text " + expectedText);
+		String actualText = profileLocators.postTextWithPic.getText();
+		System.out.println("this is the actual text " + actualText);
+		if(!actualText.equals(expectedText)) {
+			System.out.println("the post text was not the same");
+			flag = false;
+		}
+		Assert.assertTrue(flag);
+	}
+	
+	public void postJustImageProfileShowsUp()  throws InterruptedException {
+		Thread.sleep(3000);
+		boolean flag = true;
+		try {
+			WebElement element = profileLocators.postPicRead;
+			System.out.println("the post image was found");
+		} catch(NoSuchElementException e) {
+			flag = false;
+			System.out.println("the post image was not found");
+		}
+		String expectedText = textPostProfile;
+		System.out.println("this is the expected text " + expectedText);
+		String actualText = profileLocators.postTextWithPic.getText();
+		System.out.println("this is the actual text " + actualText);
+		if(!actualText.equals(expectedText)) {
+			System.out.println("the post text was not the same");
+			flag = false;
+		}
+		Assert.assertFalse(flag);
+	}
+	
+	
+	
+	public void postTexImageWall() {
+		String random = UUID.randomUUID().toString();
+		String randomShortened = random.substring(random.length() - 10);
+		textPostWall = randomShortened;
+		textPostProfile = randomShortened;
+		String fileName = System.getProperty("user.dir") + "/ImagesForUpload/1.jpg";
+		System.out.println("this is textPostProfile after being assigned: " + textPostProfile);
+		homeLocators.postPic.sendKeys("filename");
+		homeLocators.postInput.clear();
+		homeLocators.postInput.sendKeys(randomShortened);
+		homeLocators.postSubmit.click();
+	}
+	
 	public void newPostShowsOnWallAndProfile() throws InterruptedException {
 		navLocators.navProfile.click();
 		Thread.sleep(3000);

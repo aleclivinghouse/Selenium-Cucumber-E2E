@@ -17,11 +17,6 @@ public class WallSteps {
 		profileWallActions.postJustTextWall();
 	}
 	
-	@And("^I upload a post with text and an image on my wall$")
-	public void i_upload_post_wall_image_text() throws Throwable {
-		System.out.println("@And -- I upload a post on my wall with image + text");
-	}
-	
 	@And("^I upload a post with just an image on my wall$")
 	public void i_upload_post_just_image() throws Throwable {
 		System.out.println("@And -- I upload a post on my wall with just image");

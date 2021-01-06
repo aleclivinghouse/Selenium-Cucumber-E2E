@@ -47,6 +47,10 @@ public class HomeLocators {
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[1]/div[1]/div[3]/div/ul/li[1]")
 	public WebElement firstPostEdit;
 	
+	@FindBy(how=How.CSS ,using="//*[@id=\"root\"]/div/section/div[2]/div/div[2]/div[1]/div[2]/img")
+	public WebElement postPicRead;
+	
+	
 	//first post delete
 	@FindBy(how=How.XPATH ,using="/html/body/main/div/section/div[2]/div/div[2]/div[1]/div[1]/div[3]/div/ul/li[2]")
 	public WebElement firstPostDelete;
