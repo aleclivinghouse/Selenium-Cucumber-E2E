@@ -24,10 +24,45 @@ public class ProfileSteps {
 		profileWallActions.redirectedToProfilePage();
 	}
 	
+	@And("^I upload a post on my profile with just text$")
+	public void i_upload_a_post_just_text() throws Throwable {
+		System.out.println("@And -- I upload a post on my profile with just text");
+		profileWallActions.postJustTextProfile();
+		
+	}
+	
 	@And("^I change my birthday$")
 	public void i_change_my_birthday() throws Throwable {
 		System.out.println("@And -- I change my birthday");
 		profileWallActions.changeBirthday();
+	}
+	
+	@Then("the comment appears as the last comment on the first post on my profile and on my wall")
+	public void the_comment_appears_as_the_last_comment_on_the_first_post_on_my_profile_and_on_my_wall() throws Throwable {
+		profileWallActions.newCommentShowsOnWallAndProfile();
+	}
+	
+	@Then("the comment from the random user shows up as the last comment on the first post on my profile and on my wall$")
+	public void the_comment_appears_from_the_random_user() throws Throwable {
+		System.out.println("@Then -- Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall");
+		profileWallActions.newCommentShowsOnWallAndProfile();
+	}
+	
+	@And("^I delete the last comment on the first post on my profile$")
+	public void i_delete_comment_profile() throws Throwable {
+		System.out.println("@And -- I delete comment on my profile");
+		profileWallActions.deleteCommentProfile();
+	}
+	
+	@And("^I click on the like button for the first post on my profile$")
+	public void i_clcik_the_like_button_profile() throws Throwable {
+		profileWallActions.likeFirstPostOnProfile();
+	}
+	
+	@And("^I enter a comment on the first post in my profile$")
+	public void i_enter_comment_profile() throws Throwable {
+		System.out.println("@And -- I enter comment on my profile");
+		profileWallActions.postCommentProfile();
 	}
 	
 	@Then("^my birthday should appear on the screen$")
@@ -177,10 +212,9 @@ public class ProfileSteps {
 //		System.out.println("@And -- I like the first post in his feed");
 //	}
 //	
-//	@Then("^the post I wrote on my wall is displayed as the first post on my profile and my wall$")
-//	public void the_post_is_displayed_as_the_first_profile_on_my_wall() throws Throwable {
-//		
-//		System.out.println("@Then -- post is displayed as the first post on my profile and my wall");
-//	}
+	@Then("^the post I wrote on my profile is displayed as the first post on my profile and my wall$")
+	public void the_post_profile_displayed_as_the_first_profile_on_my_wall() throws Throwable {
+		profileWallActions.newPostShowsOnWallAndProfile();
+	}
 	
 }

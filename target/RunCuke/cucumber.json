@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-06T19:16:44.192Z",
+        "start_timestamp": "2021-01-16T19:39:14.710Z",
         "before": [
           {
             "result": {
-              "duration": 2109562859,
+              "duration": 2675608490,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "I enter a post on my profile with just an image:",
+        "line": 15,
+        "name": "I want to change my relationship status",
         "description": "",
-        "id": "test;i-enter-a-post-on-my-profile-with-just-an-image:",
+        "id": "profile;i-want-to-change-my-relationship-status",
         "after": [
           {
             "result": {
-              "duration": 141806380,
+              "duration": 120068910,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1596345554,
+              "duration": 1810860486,
               "status": "passed"
             },
-            "line": 5,
+            "line": 16,
             "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
             "match": {
               "arguments": [
@@ -53,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 165686393,
+              "duration": 270771612,
               "status": "passed"
             },
-            "line": 6,
+            "line": 17,
             "name": "I fill in email with \"testuser1@livinghouse.com\"",
             "match": {
               "arguments": [
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 102183278,
+              "duration": 263361161,
               "status": "passed"
             },
-            "line": 7,
+            "line": 18,
             "name": "I fill in password with \"password\"",
             "match": {
               "arguments": [
@@ -89,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 59012432,
+              "duration": 112700743,
               "status": "passed"
             },
-            "line": 8,
+            "line": 19,
             "name": "I press Sign in",
             "match": {
               "location": "SharedSteps.i_press_Sign_in()"
@@ -101,10 +101,10 @@
           },
           {
             "result": {
-              "duration": 1033404811,
+              "duration": 1054471883,
               "status": "passed"
             },
-            "line": 9,
+            "line": 20,
             "name": "I am redirected to my home page",
             "match": {
               "location": "SharedSteps.redirected_to_home_page()"
@@ -113,10 +113,10 @@
           },
           {
             "result": {
-              "duration": 58668544,
+              "duration": 120250994,
               "status": "passed"
             },
-            "line": 10,
+            "line": 21,
             "name": "I click on my name in the nav",
             "match": {
               "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
@@ -125,10 +125,10 @@
           },
           {
             "result": {
-              "duration": 1041828498,
+              "duration": 1039319599,
               "status": "passed"
             },
-            "line": 11,
+            "line": 22,
             "name": "I am redirected to my profile page",
             "match": {
               "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
@@ -137,10 +137,1444 @@
           },
           {
             "result": {
-              "duration": 164773079,
+              "duration": 285226912,
               "status": "passed"
             },
-            "line": 12,
+            "line": 23,
+            "name": "I change my relationship status",
+            "match": {
+              "location": "ProfileSteps.i_change_my_relationship_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1031041014,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "my relationship status should appear on the screen",
+            "match": {
+              "location": "ProfileSteps.my_relationship_status_appears_on_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:39:23.523Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1669605459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "I want to change my school",
+        "description": "",
+        "id": "profile;i-want-to-change-my-school",
+        "after": [
+          {
+            "result": {
+              "duration": 189252491,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1947588547,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 227818618,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129994195,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83146573,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1034535713,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119756087,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1033448449,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228284223,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I change my school",
+            "match": {
+              "location": "ProfileSteps.i_change_my_school()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1020763334,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "my school should appear on the screen",
+            "match": {
+              "location": "ProfileSteps.my_school_appears_on_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:39:31.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1846987494,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "I want to change my work",
+        "description": "",
+        "id": "profile;i-want-to-change-my-work",
+        "after": [
+          {
+            "result": {
+              "duration": 219829982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2584597702,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297231348,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119394896,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67968092,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1043366072,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121758502,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1043553180,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187241365,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I change my work",
+            "match": {
+              "location": "ProfileSteps.i_change_my_work()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019730100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "my work should appear on the screen",
+            "match": {
+              "location": "ProfileSteps.my_work_appears_on_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:39:39.778Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1637882206,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "I want to change my city",
+        "description": "",
+        "id": "profile;i-want-to-change-my-city",
+        "after": [
+          {
+            "result": {
+              "duration": 185339233,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1564480442,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154760067,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97053002,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55182915,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1030803637,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90674507,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021650556,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176634723,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I change my city",
+            "match": {
+              "location": "ProfileSteps.i_change_my_city()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1020049434,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "my city should appear on the screen",
+            "match": {
+              "location": "ProfileSteps.my_city_appears_on_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:39:46.820Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1541392934,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "I enter a post on my profile with just text:",
+        "description": "",
+        "id": "profile;i-enter-a-post-on-my-profile-with-just-text:",
+        "after": [
+          {
+            "result": {
+              "duration": 196090001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1458631983,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195835132,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108812680,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51390572,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027439997,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72919301,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1042169410,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211717740,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I upload a post on my profile with just text",
+            "match": {
+              "location": "ProfileSteps.i_upload_a_post_just_text()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6167246394,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the post I wrote on my profile is displayed as the first post on my profile and my wall",
+            "match": {
+              "location": "ProfileSteps.the_post_profile_displayed_as_the_first_profile_on_my_wall()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:39:58.900Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1569239060,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 70,
+        "name": "I comment on the first post on my profile",
+        "description": "",
+        "id": "profile;i-comment-on-the-first-post-on-my-profile",
+        "after": [
+          {
+            "result": {
+              "duration": 189502616,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1353612920,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 181026254,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110372071,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47119216,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1033078232,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80522282,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1024838626,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2249310190,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I enter a comment on the first post in my profile",
+            "match": {
+              "location": "ProfileSteps.i_enter_comment_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3942679873,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "the comment appears as the last comment on the first post on my profile and on my wall",
+            "match": {
+              "location": "ProfileSteps.the_comment_appears_as_the_last_comment_on_the_first_post_on_my_profile_and_on_my_wall()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:40:10.712Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1992292146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "I like the first post on my profile",
+        "description": "",
+        "id": "profile;i-like-the-first-post-on-my-profile",
+        "after": [
+          {
+            "result": {
+              "duration": 222101162,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1368147862,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243341807,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141302469,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51125784,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1033218384,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74863512,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1022700465,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336696369,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I click on the like button for the first post on my profile",
+            "match": {
+              "location": "ProfileSteps.i_clcik_the_like_button_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 90,
+            "name": "the like count goes up by one on my profile and on my wall",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:40:17.206Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1664964909,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 92,
+        "name": "I delete the last comment on the first post on my profile",
+        "description": "",
+        "id": "profile;i-delete-the-last-comment-on-the-first-post-on-my-profile",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)\n\tat steps.AfterActions.tearDown(AfterActions.java:19)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)\n\tat cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\n\tat org.testng.TestNG.run(TestNG.java:1017)\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\n",
+              "duration": 21481036,
+              "status": "failed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1834125938,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 225540009,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116426315,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45587815,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n*** Element info: {Using\u003dxpath, value\u003d/html/body/main/div/header/div/div[2]/ul[1]/li[2]/a}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy25.getText(Unknown Source)\n\tat pages.actions.LoginActions.UserIsSignedIn(LoginActions.java:48)\n\tat steps.SharedSteps.redirected_to_home_page(SharedSteps.java:54)\n\tat ✽.I am redirected to my home page(file:src/test/resources/FeatureFiles/Profile.feature:97)\n",
+              "duration": 1049580987,
+              "status": "failed"
+            },
+            "line": 97,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 564163,
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70809,
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090911,
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "I delete the last comment on the first post on my profile",
+            "match": {
+              "location": "ProfileSteps.i_delete_comment_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79807,
+              "status": "skipped"
+            },
+            "line": 101,
+            "name": "the last comment on the first post in my profile and on my wall disappears",
+            "match": {
+              "location": "ProfileSteps.comment_dissapears()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:40:22.182Z",
+        "before": [
+          {
+            "result": {
+              "duration": 229241,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 103,
+        "name": "I enter a post on my profile with text and an image:",
+        "description": "",
+        "id": "profile;i-enter-a-post-on-my-profile-with-text-and-an-image:",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)\n\tat steps.AfterActions.tearDown(AfterActions.java:19)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)\n\tat cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\n\tat org.testng.TestNG.run(TestNG.java:1017)\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\n",
+              "duration": 9009427,
+              "status": "failed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)\n\tat utils.SeleniumDriver.openPage(SeleniumDriver.java:44)\n\tat steps.SharedSteps.user_navigates_to_landing_page(SharedSteps.java:26)\n\tat ✽.I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website(file:src/test/resources/FeatureFiles/Profile.feature:104)\n",
+              "duration": 15244498,
+              "status": "failed"
+            },
+            "line": 104,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113259,
+              "status": "skipped"
+            },
+            "line": 105,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54308,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43512,
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41752,
+              "status": "skipped"
+            },
+            "line": 108,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41512,
+              "status": "skipped"
+            },
+            "line": 109,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 396428,
+              "status": "skipped"
+            },
+            "line": 110,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53929,
+              "status": "skipped"
+            },
+            "line": 111,
+            "name": "I upload a post with text and an image on my profile",
+            "match": {
+              "location": "ProfileSteps.i_upload_post_profile_image_text()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52230,
+              "status": "skipped"
+            },
+            "line": 112,
+            "name": "the post I wrote on my profile is displayed as the first post on my profile and my wall",
+            "match": {
+              "location": "ProfileSteps.the_post_profile_displayed_as_the_first_profile_on_my_wall()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-16T19:40:22.215Z",
+        "before": [
+          {
+            "result": {
+              "duration": 188172,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 114,
+        "name": "I enter a post on my profile with just an image:",
+        "description": "",
+        "id": "profile;i-enter-a-post-on-my-profile-with-just-an-image:",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)\n\tat steps.AfterActions.tearDown(AfterActions.java:19)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)\n\tat cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\n\tat org.testng.TestNG.run(TestNG.java:1017)\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\n",
+              "duration": 7726095,
+              "status": "failed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.141)\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027Alecs-MacBook-Pro-2.local\u0027, ip: \u0027fe80:0:0:0:473:70f:13e0:9fdf%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.4\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/ct/jqfbbh8j7v3...}, goog:chromeOptions: {debuggerAddress: localhost:60108}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ee53af283563fdaf8029c0e46809a493\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)\n\tat utils.SeleniumDriver.openPage(SeleniumDriver.java:44)\n\tat steps.SharedSteps.user_navigates_to_landing_page(SharedSteps.java:26)\n\tat ✽.I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website(file:src/test/resources/FeatureFiles/Profile.feature:115)\n",
+              "duration": 10537252,
+              "status": "failed"
+            },
+            "line": 115,
+            "name": "I am on the landing page \"https://spbk.herokuapp.com/#/login\" of the website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://spbk.herokuapp.com/#/login",
+                  "offset": 26
+                }
+              ],
+              "location": "SharedSteps.user_navigates_to_landing_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 121956,
+              "status": "skipped"
+            },
+            "line": 116,
+            "name": "I fill in email with \"testuser1@livinghouse.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser1@livinghouse.com",
+                  "offset": 22
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56762,
+              "status": "skipped"
+            },
+            "line": 117,
+            "name": "I fill in password with \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "SharedSteps.user_uses_correct_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46420,
+              "status": "skipped"
+            },
+            "line": 118,
+            "name": "I press Sign in",
+            "match": {
+              "location": "SharedSteps.i_press_Sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130649,
+              "status": "skipped"
+            },
+            "line": 119,
+            "name": "I am redirected to my home page",
+            "match": {
+              "location": "SharedSteps.redirected_to_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61936,
+              "status": "skipped"
+            },
+            "line": 120,
+            "name": "I click on my name in the nav",
+            "match": {
+              "location": "ProfileSteps.i_click_on_my_name_in_the_nav()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59792,
+              "status": "skipped"
+            },
+            "line": 121,
+            "name": "I am redirected to my profile page",
+            "match": {
+              "location": "ProfileSteps.i_am_redirected_to_the_profile_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49495,
+              "status": "skipped"
+            },
+            "line": 122,
             "name": "I upload a post with just an image on my profile",
             "match": {
               "location": "ProfileSteps.i_upload_a_post_with_just_an_image_on_my_profile()"
@@ -149,24 +1583,24 @@
           },
           {
             "result": {
-              "duration": 3028814304,
-              "status": "passed"
+              "duration": 51042,
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "the post does not display on my profile or my wall",
+            "line": 123,
+            "name": "the post I wrote on my profile is displayed as the first post on my profile and my wall",
             "match": {
-              "location": "ProfileSteps.the_post_does_not_display_on_my_profile_or_my_wall()"
+              "location": "ProfileSteps.the_post_profile_displayed_as_the_first_profile_on_my_wall()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test",
-    "description": "\tIndividual test for dev purposes",
-    "id": "test",
+    "name": "Profile",
+    "description": "\tI want to see if the users profile page functions correctly",
+    "id": "profile",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/FeatureFiles/Test.feature",
+    "uri": "file:src/test/resources/FeatureFiles/Profile.feature",
     "tags": []
   }
 ]

@@ -139,11 +139,6 @@ public class SharedSteps {
 //		System.out.println("@Then -- the last comment on the first post in my profile and on my wall disappears");
 //	}
 //	
-	@Then("the comment from the random user shows up as the last comment on the first post on my profile and on my wall$")
-	public void the_comment_appears_from_the_random_user() throws Throwable {
-		System.out.println("@Then -- Then the comment from the random user shows up as the last comment on the first post on my profile and on my wall");
-		profileWallActions.newCommentShowsOnWallAndProfile();
-	}
 //	
 
 //	
