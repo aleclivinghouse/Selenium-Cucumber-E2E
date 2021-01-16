@@ -87,7 +87,7 @@ Scenario: I want to change my school
 	    And I click on my name in the nav
 	    And I am redirected to my profile page
 	    And I click on the like button for the first post on my profile
-	    Then the like count goes up by one on my profile and on my wall
+	    Then from profile the like count goes up by one on my profile and on my wall
 	    
     Scenario: I delete the last comment on the first post on my profile
     	Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
@@ -98,7 +98,7 @@ Scenario: I want to change my school
 	    And I click on my name in the nav
 	    And I am redirected to my profile page
 	    And I delete the last comment on the first post on my profile
-	    Then the last comment on the first post in my profile and on my wall disappears
+	    Then from profile the last comment on the first post in my profile and on my wall disappears
 
 	 Scenario: I enter a post on my profile with text and an image:
  		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
@@ -109,16 +109,5 @@ Scenario: I want to change my school
 	    And I click on my name in the nav
 	    And I am redirected to my profile page
     	And I upload a post with text and an image on my profile
-    	Then the post I wrote on my profile is displayed as the first post on my profile and my wall
-    
-     Scenario: I enter a post on my profile with just an image:
- 		Given I am on the landing page "https://spbk.herokuapp.com/#/login" of the website
-		When I fill in email with "testuser1@livinghouse.com"
-	    And I fill in password with "password"
-	    And I press Sign in
-	    And I am redirected to my home page
-	    And I click on my name in the nav
-	    And I am redirected to my profile page
-    	And I upload a post with just an image on my profile
     	Then the post I wrote on my profile is displayed as the first post on my profile and my wall
     

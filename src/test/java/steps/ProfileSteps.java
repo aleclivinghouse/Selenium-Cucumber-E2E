@@ -118,6 +118,20 @@ public class ProfileSteps {
 		System.out.println("@Then -- city appears on screen");
 		profileWallActions.newCityOnScreen();
 	}
+	
+	//start
+	@Then("^from profile the like count goes up by one on my profile and on my wall$")
+	public void the_like_count_goes_up() throws Throwable {
+		System.out.println("@Then -- the post does not display on my profile or my wall");
+		profileWallActions.firstPostLikeShowsOnWallAndProfile();
+	}
+	
+	@Then("^from profile the last comment on the first post in my profile and on my wall disappears$")
+	public void the_comment_disappears() throws Throwable {
+		System.out.println("@Then -- the last comment on the first post in my profile and on my wall disappears");
+	}
+	
+	//end
 //	
 //	@And("^I upload a new cover photo$")
 //	public void i_upload_new_cover_photo() throws Throwable {
@@ -216,5 +230,7 @@ public class ProfileSteps {
 	public void the_post_profile_displayed_as_the_first_profile_on_my_wall() throws Throwable {
 		profileWallActions.newPostShowsOnWallAndProfile();
 	}
+	
+	
 	
 }
